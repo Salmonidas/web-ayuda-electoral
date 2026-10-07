@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutoriales de Configuración | Fiscalizador Electoral España</title>
+  
+  <meta name="description" content="Guías paso a paso para configurar el Fiscalizador Electoral en Gemini Gems, ChatGPT, Claude Projects, Perplexity, Microsoft Copilot e IAs locales.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical & Favicon -->
+  <link rel="canonical" href="https://salmonidas.github.io/web-ayuda-electoral/tutorial/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="../" class="brand">
+        <div class="brand-icon">⚖️</div>
+        <span>Fiscalizador Electoral</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="../" class="nav-link">El Prompt</a></li>
+          <li><a href="./" class="nav-link" style="color: var(--accent-primary); font-weight: 700;">Tutoriales IA</a></li>
+          <li><a href="../fuentes/" class="nav-link">Fuentes Oficiales</a></li>
+          <li><a href="../comunidad/" class="nav-link">Participar</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a id="repo-link" href="https://github.com/Salmonidas/web-ayuda-electoral" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ver repositorio en GitHub" aria-label="Repositorio de GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+
+        <button id="theme-toggle" class="btn-icon" type="button" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema">
+          <span id="theme-icon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" style="border-top: none; padding-top: 3.5rem;">
+      <div class="container">
+        <div class="section-header" style="max-width: 50rem;">
+          <span class="section-tag">Paso a Paso Universal</span>
+          <h1 class="section-title">Tutoriales de Configuración para Cualquier IA</h1>
+          <p class="section-desc">
+            Aprende a transformar tu asistente de Inteligencia Artificial preferido en un fiscalizador cívico independiente permanente.
+          </p>
+          <div style="margin-top: 1.5rem;">
+            <button id="hero-copy-prompt" class="btn btn-primary" type="button">
+              📋 Copiar Prompt de Fiscalización
+            </button>
+          </div>
+        </div>
+
+        <!-- Gemini Gems Main Banner -->
+        <div class="tutorial-banner">
+          <div class="banner-icon">💎</div>
+          <div class="banner-text">
+            <h3>¿Por qué Gemini Gems es la plataforma recomendada?</h3>
+            <p>
+              El prompt fue concebido y probado originalmente en <strong>Gemini Gems</strong>, donde demostró una eficacia sobresaliente. Al disponer del motor de búsqueda web en directo de Google y capacidad para inspeccionar fuentes primarias y volcados de datos estructurados (como <em>info29n.com/datos.json</em> o la arquitectura parlamentaria de <em>elcongresoentumano.es</em>), contrasta promesas políticas con hipervínculos exactos y sin alucinaciones.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 Steps Tutorial Flow for Gemini -->
+        <div class="tutorial-flow">
+          <div class="flow-step-card">
+            <div class="flow-badge">1</div>
+            <h4>Abre Gemini Gems</h4>
+            <p>
+              Inicia sesión con tu cuenta de Google en <a href="https://gemini.google.com/gems/view" target="_blank" rel="noopener noreferrer">gemini.google.com/gems/view</a>.
+            </p>
+          </div>
+
+          <div class="flow-step-card">
+            <div class="flow-badge">2</div>
+            <h4>Crea un "Nuevo Gem"</h4>
+            <p>
+              Haz clic en <strong>"+ Nuevo Gem"</strong> y nómbralo <em>Fiscalizador Electoral España</em>.
+            </p>
+          </div>
+
+          <div class="flow-step-card">
+            <div class="flow-badge">3</div>
+            <h4>Pega las Instrucciones</h4>
+            <p>
+              Pulsa en <strong>«Copiar Prompt»</strong> y pega el texto íntegro en el campo de <em>Instrucciones</em> del Gem.
+            </p>
+          </div>
+
+          <div class="flow-step-card">
+            <div class="flow-badge">4</div>
+            <h4>Guarda y Fiscaliza</h4>
+            <p>
+              Guarda los cambios. Tendrás tu auditor cívico siempre disponible en el menú lateral de Gemini listo para responder.
+            </p>
+          </div>
+        </div>
+
+        <!-- Continuous evolution notice -->
+        <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; margin-bottom: 3.5rem;">
+          <div>
+            <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem;">🔄 Un prompt en evolución continua</h4>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+              Actualizamos periódicamente este prompt con nuevas fuentes oficiales descubiertas y sugerencias de la ciudadanía.
+            </p>
+          </div>
+          <a href="../comunidad/" class="btn btn-secondary" style="font-size: 0.88rem; padding: 0.6rem 1.1rem;">
+            💡 Ver cómo proponer mejoras en GitHub
+          </a>
+        </div>
+
+        <!-- Multi-AI Platform Guides Accordion -->
+        <div style="margin-bottom: 4rem;">
+          <h2 style="font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1.5rem;">
+            Guías para Otros Modelos y Plataformas de IA
+          </h2>
+
+          <!-- ChatGPT -->
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span style="font-size: 1.25rem;">🤖</span>
+                <strong>ChatGPT (OpenAI) · Custom GPT o Chat Estándar</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <div style="display: grid; gap: 0.85rem;">
+                <p><strong>Opción A — Como Custom GPT (ChatGPT Plus / Team):</strong></p>
+                <ol style="padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                  <li>Accede a <a href="https://chatgpt.com/gpts/editor" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: underline;">chatgpt.com/gpts/editor</a> o haz clic en <em>Explore GPTs</em> → <em>+ Create</em>.</li>
+                  <li>En la pestaña <strong>Configure</strong>, ponle por nombre <em>Fiscalizador Electoral España</em>.</li>
+                  <li>Pega el prompt copiado de la web en el campo <strong>Instructions</strong>.</li>
+                  <li>En <strong>Capabilities</strong>, asegúrate de marcar la casilla <strong>Web Search</strong> (imprescindible para auditar leyes y hemerotecas en vivo).</li>
+                  <li>Pulsa en <em>Save</em> (puedes guardarlo como privado <em>Only me</em> o compartirlo mediante enlace).</li>
+                </ol>
+                <p style="margin-top: 0.5rem;"><strong>Opción B — Uso directo en Chat Estándar:</strong></p>
+                <p style="font-size: 0.88rem;">Inicia un nuevo chat con navegación web y escribe como primer mensaje: <em>«Actúa como Fiscalizador Electoral España siguiendo estas instrucciones: [pegar prompt]»</em>.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Claude -->
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span style="font-size: 1.25rem;">🎭</span>
+                <strong>Claude (Anthropic) · Claude Projects & Artifacts</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <div style="display: grid; gap: 0.85rem;">
+                <p><strong>Configuración en Claude Projects (Claude Pro / Team):</strong></p>
+                <ol style="padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                  <li>Entra en <a href="https://claude.ai" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: underline;">claude.ai</a>, abre el menú de <em>Projects</em> y pulsa en <em>+ Create Project</em>.</li>
+                  <li>Nómbralo <em>Fiscalizador Electoral España</em>.</li>
+                  <li>En el apartado <strong>Project Instructions</strong>, pega el prompt de la web.</li>
+                  <li><em>Superpoder de Claude:</em> Puedes adjuntar en <strong>Project Knowledge</strong> programas electorales completos en PDF o informes del INE para que Claude los audite con su amplia ventana de contexto.</li>
+                  <li><em>Visualización con Artifacts:</em> Si pides a Claude generar una infografía en HTML/CSS, la previsualizará de forma interactiva en tiempo real en su panel de Artifacts.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- Perplexity AI -->
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span style="font-size: 1.25rem;">🔍</span>
+                <strong>Perplexity AI · Collections & Pro Search</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <div style="display: grid; gap: 0.85rem;">
+                <p><strong>Configuración como Colección especializada:</strong></p>
+                <ol style="padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                  <li>Ve a <a href="https://perplexity.ai" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: underline;">perplexity.ai</a> → <em>Library</em> → <em>Collections</em> → <em>+ New Collection</em>.</li>
+                  <li>Nómbrala <em>Fiscalizador Electoral España</em>.</li>
+                  <li>En el campo <strong>AI Prompt (Instrucciones)</strong>, pega el prompt oficial.</li>
+                  <li>Activa el modo <strong>Pro Search</strong> al realizar tus consultas.</li>
+                  <li><em>Ventaja única:</em> Perplexity realiza múltiples búsquedas web concurrentes y aporta números de cita [1], [2] con enlaces a cada documento oficial.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- Microsoft Copilot -->
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span style="font-size: 1.25rem;">💻</span>
+                <strong>Microsoft Copilot · Motor Bing en Modo Preciso</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <div style="display: grid; gap: 0.85rem;">
+                <p><strong>Uso en Microsoft Copilot:</strong></p>
+                <ol style="padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                  <li>Entra en <a href="https://copilot.microsoft.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: underline;">copilot.microsoft.com</a> con tu cuenta.</li>
+                  <li>En el selector de estilo de conversación, selecciona el modo <strong>Más Preciso</strong>.</li>
+                  <li>Pega el prompt como mensaje de inicio y añade tu consulta de verificación.</li>
+                  <li>Copilot utiliza el índice de Bing en tiempo real para rastrear declaraciones recientes en prensa española.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- Local LLMs -->
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span style="font-size: 1.25rem;">🦙</span>
+                <strong>IAs Locales y Open Source · DeepSeek, Llama 3 (Ollama / LM Studio)</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <div style="display: grid; gap: 0.85rem;">
+                <p><strong>Para máxima privacidad y software libre:</strong></p>
+                <ol style="padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.4rem;">
+                  <li>Abre tu cliente local (LM Studio, AnythingLLM, Open WebUI o Ollama).</li>
+                  <li>Pega el texto del prompt en el campo de <strong>System Prompt</strong> de tu modelo (ej. <em>DeepSeek-R1</em>, <em>Llama-3.3-70B</em> o <em>Qwen-2.5</em>).</li>
+                  <li><strong>Requisito clave:</strong> Conecta tu cliente local a una herramienta de búsqueda web (SearXNG, Tavily API o Brave Search) para que el modelo pueda consultar internet y el BOE en vivo.</li>
+                  <li><em>Ventaja:</em> Ninguna de tus investigaciones electorales viaja a servidores corporativos externos.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Query Patterns Section -->
+        <div>
+          <h2 style="font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.5rem;">
+            💡 Patrones de Consulta: Cómo Formular Preguntas con Máximo Rigor
+          </h2>
+          <p style="color: var(--text-secondary); margin-bottom: 1.75rem;">
+            El prompt está diseñado para entender cualquier lenguaje natural y coloquial, pero puedes exprimir al máximo su potencia con estos enfoques:
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem;">
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem;">
+              <span style="font-size: 1.6rem; display: block; margin-bottom: 0.6rem;">⛓️</span>
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">La Cadena de Cumplimiento</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Pídele a la IA: <em>«Evalúa la cadena completa: ¿Quién lo prometió? ¿Qué competencia jurídica tenía? ¿Se aprobó una ley en el Parlamento? ¿Hubo presupuesto en el BOE? ¿Cuál fue el resultado real?»</em>
+              </p>
+            </div>
+
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem;">
+              <span style="font-size: 1.6rem; display: block; margin-bottom: 0.6rem;">🎭</span>
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Detección de Cortinas de Humo</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Pídele a la IA: <em>«Compara cómo cubrieron esta polémica El País, El Mundo y OKDiario. ¿Qué hechos admiten los tres y qué aspectos omite o destaca cada medio en portada?»</em>
+              </p>
+            </div>
+
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem;">
+              <span style="font-size: 1.6rem; display: block; margin-bottom: 0.6rem;">💰</span>
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Follow the Money</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Pídele a la IA: <em>«No te fíes del anuncio político: busca si existe licitación pública en la Plataforma de Contratación del Estado y dotación presupuestaria aprobada.»</em>
+              </p>
+            </div>
+
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem;">
+              <span style="font-size: 1.6rem; display: block; margin-bottom: 0.6rem;">📖</span>
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Hemeroteca y Coherencia</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Pídele a la IA: <em>«Contrasta si este partido defendió lo contrario cuando estaba en la oposición y aporta enlaces a las votaciones oficiales en el diario de sesiones.»</em>
+              </p>
+            </div>
+
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem;">
+              <span style="font-size: 1.6rem; display: block; margin-bottom: 0.6rem;">💼</span>
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Convenios Sectoriales y Normativa Laboral</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Pídele a la IA: <em>«Busca el convenio colectivo oficial de [sector o provincia] en el BOE o REGCON. ¿Cuáles son las tablas salariales oficiales reguladas, la jornada máxima legal y qué procedimientos de reclamación colectiva establece para los trabajadores?»</em>
+              </p>
+            </div>
+
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem;">
+              <span style="font-size: 1.6rem; display: block; margin-bottom: 0.6rem;">📜</span>
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">¿Hecho Real o Mito Inventado?</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Pídele a la IA: <em>«Circula que en el año [X] se aprobó [medida controvertida]. ¿Es un hecho histórico demostrado o una leyenda urbana política? Revisa el BOE y las actas parlamentarias de esa fecha.»</em>
+              </p>
+            </div>
+
+            <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem;">
+              <span style="font-size: 1.6rem; display: block; margin-bottom: 0.6rem;">🤝</span>
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Financiación de Sindicatos y ONGs</h4>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Pídele a la IA: <em>«Consulta la Base de Datos Nacional de Subvenciones (BDNS): ¿qué ayudas públicas ha recibido [nombre de entidad, sindicato o patronal] en los últimos 4 años y para qué fines?»</em>
+              </p>
+            </div>
+          </div>
+
+          <!-- Privacy Notice -->
+          <div style="margin-top: 1.5rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.15rem 1.35rem;">
+            <p style="font-size: 0.86rem; color: var(--text-secondary); margin: 0; line-height: 1.5;">
+              <strong style="color: var(--text-primary);">Aviso de responsabilidad sobre datos particulares:</strong> Si decides aportar información privada como nóminas o contratos en tu consulta, hazlo bajo tu propia responsabilidad atendiendo a las políticas de privacidad de la IA que utilices. La herramienta está concebida para auditar fuentes públicas oficiales, convenios colectivos del BOE y normativa vigente.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Fiscalizador Electoral España</h4>
+          <p>
+            Iniciativa cívica independiente para empoderar a la ciudadanía española en el uso riguroso y objetivo de la Inteligencia Artificial para el voto informado.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Navegación</h5>
+            <ul>
+              <li><a href="../">El Prompt</a></li>
+              <li><a href="./">Tutoriales IA</a></li>
+              <li><a href="../fuentes/">Fuentes Oficiales</a></li>
+              <li><a href="../comunidad/">Participar</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Código Abierto</h5>
+            <ul>
+              <li><a href="https://github.com/Salmonidas/web-ayuda-electoral" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a></li>
+              <li><a href="https://github.com/Salmonidas/web-ayuda-electoral/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a></li>
+              <li><a href="https://gemini.google.com/gems/view" target="_blank" rel="noopener noreferrer">Gemini Gems</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Desarrollado con compromiso cívico · Sin cookies de seguimiento · Software libre
+        </div>
+        <div>
+          Proyecto alojado en GitHub Pages
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+export const sourcesData = [
+  {
+    id: "boe",
+    name: "Boletín Oficial del Estado (BOE)",
+    url: "https://www.boe.es",
+    level: "Nivel 1",
+    levelCategory: "oficial",
+    levelName: "Evidencia Primaria Oficial",
+    description: "Publicación oficial del Estado donde se promulgan leyes, reales decretos, nombramientos y resoluciones con validez jurídica vinculante.",
+    whyUseful: "Es la máxima autoridad normativa. Para cualquier afirmación legal, el texto del BOE es la única prueba jurídica definitiva frente a declaraciones políticas.",
+    tags: ["Leyes", "Normativa", "Presupuestos", "Estatal"]
+  },
+  {
+    id: "congreso",
+    name: "Congreso de los Diputados",
+    url: "https://www.congreso.es",
+    level: "Nivel 1",
+    levelCategory: "oficial",
+    levelName: "Evidencia Primaria Oficial",
+    description: "Portal parlamentario oficial con diarios de sesiones, registros de iniciativas legislativas, enmiendas y votaciones nominales por diputado y grupo.",
+    whyUseful: "Permite auditar el sentido real de cada voto, abstención o enmienda presentada, separando el discurso mediático de la votación en acta.",
+    tags: ["Votaciones", "Diarios de Sesiones", "Diputados", "Leyes"]
+  },
+  {
+    id: "senado",
+    name: "Senado de España",
+    url: "https://www.senado.es",
+    level: "Nivel 1",
+    levelCategory: "oficial",
+    levelName: "Evidencia Primaria Oficial",
+    description: "Cámara alta de representación territorial. Registro oficial de tramitación de leyes, vetos parlamentarios e iniciativas autonómicas.",
+    whyUseful: "Imprescindible para rastrear el trámite completo de leyes antes de su publicación definitiva en el BOE.",
+    tags: ["Trámite", "Territorial", "Enmiendas"]
+  },
+  {
+    id: "ine",
+    name: "Instituto Nacional de Estadística (INE)",
+    url: "https://www.ine.es",
+    level: "Nivel 1",
+    levelCategory: "oficial",
+    levelName: "Evidencia Primaria Oficial",
+    description: "Organismo oficial de estadísticas socioeconómicas, demografía, empleo (EPA), inflación (IPC), hipotecas y vivienda en España.",
+    whyUseful: "Permite verificar series históricas largas para neutralizar el 'cherry-picking' estadístico en debates electorales.",
+    tags: ["Estadísticas", "Empleo", "Inflación", "Demografía"]
+  },
+  {
+    id: "plataforma-contratacion",
+    name: "Plataforma de Contratación del Sector Público",
+    url: "https://contrataciondelestado.es",
+    level: "Nivel 1",
+    levelCategory: "oficial",
+    levelName: "Evidencia Primaria Oficial",
+    description: "Portal oficial donde se licitan y publican todos los contratos, suministros y obras de las administraciones públicas en España.",
+    whyUseful: "Permite aplicar la regla 'Follow the Money': comprobar si las promesas de infraestructuras o servicios tienen licitación y presupuesto real asignado.",
+    tags: ["Contratos", "Licitaciones", "Gasto Público", "Follow the Money"]
+  },
+  {
+    id: "jec",
+    name: "Junta Electoral Central (JEC)",
+    url: "https://www.juntaelectoralcentral.es",
+    level: "Nivel 1",
+    levelCategory: "oficial",
+    levelName: "Evidencia Primaria Oficial",
+    description: "Órgano regulador de los procesos electorales en España. Publica resoluciones, programas oficiales depositados y censos.",
+    whyUseful: "Garantiza la legalidad de los comicios y resuelve reclamaciones sobre neutralidad institucional y candidaturas.",
+    tags: ["Elecciones", "Candidaturas", "Normativa Electoral"]
+  },
+  {
+    id: "regcon",
+    name: "REGCON · Registro de Convenios Colectivos",
+    url: "https://expedientes.mites.gob.es/regcon/",
+    level: "Nivel 1",
+    levelCategory: "oficial",
+    levelName: "Evidencia Primaria Oficial",
+    description: "Registro oficial del Ministerio de Trabajo y Economía Social donde se inscriben y publican todos los convenios colectivos, acuerdos laborales y planes de igualdad en España.",
+    whyUseful: "Esencial para contrastar derechos laborales, tablas salariales vigentes y acuerdos sectoriales frente a rumores o declaraciones públicas.",
+    tags: ["Laboral", "Convenios", "Tablas Salariales", "Ministerio de Trabajo"]
+  },
+  {
+    id: "bdns",
+    name: "Base de Datos Nacional de Subvenciones (BDNS / SNPS)",
+    url: "https://www.infosubvenciones.es",
+    level: "Nivel 1",
+    levelCategory: "oficial",
+    levelName: "Evidencia Primaria Oficial",
+    description: "Sistema Nacional de Publicidad de Subvenciones gestionado por la Intervención General de la Administración del Estado (IGAE).",
+    whyUseful: "Permite auditar con total transparencia qué dinero público exacto reciben partidos políticos, sindicatos, patronales, fundaciones y ONGs.",
+    tags: ["Subvenciones", "Sindicatos", "Patronal", "Hacienda", "Follow the Money"]
+  },
+  {
+    id: "maldita",
+    name: "Maldita.es",
+    url: "https://maldita.es",
+    level: "Nivel 2",
+    levelCategory: "fact-checking",
+    levelName: "Fact-Checking Acreditado",
+    description: "Medio de verificación independiente y sin ánimo de lucro acreditado por la International Fact-Checking Network (IFCN) y EFCSN.",
+    whyUseful: "Auditoría ágil de bulos virales, declaraciones engañosas en mítines y desinformación electoral en redes sociales.",
+    tags: ["Fact-checking", "Bulos", "Maldito Dato", "IFCN"]
+  },
+  {
+    id: "newtral",
+    name: "Newtral",
+    url: "https://newtral.es",
+    level: "Nivel 2",
+    levelCategory: "fact-checking",
+    levelName: "Fact-Checking Acreditado",
+    description: "Startup de contenido periodístico especializada en verificación factual y transparencia de datos públicos, acreditada por IFCN.",
+    whyUseful: "Especialmente útil por su sección 'Zona de Veredicto' que contrasta datos citados en entrevistas políticas frente a estadísticas oficiales.",
+    tags: ["Fact-checking", "Veredictos", "Transparencia", "IFCN"]
+  },
+  {
+    id: "efe-verifica",
+    name: "EFE Verifica",
+    url: "https://verifica.efe.com",
+    level: "Nivel 2",
+    levelCategory: "fact-checking",
+    levelName: "Fact-Checking Acreditado",
+    description: "Servicio de verificación de la Agencia EFE, la principal agencia de noticias en español, miembro de la red europea EFCSN.",
+    whyUseful: "Desmentidos rigurosos de desinformación internacional, audios manipulados con IA y bulos de política exterior.",
+    tags: ["Agencia EFE", "Internacional", "EFCSN"]
+  },
+  {
+    id: "verificat",
+    name: "Verificat",
+    url: "https://www.verificat.cat",
+    level: "Nivel 2",
+    levelCategory: "fact-checking",
+    levelName: "Fact-Checking Acreditado",
+    description: "Primera plataforma de fact-checking de Cataluña, acreditada por IFCN y EFCSN. Verificación en catalán y castellano.",
+    whyUseful: "Imprescindible para auditar declaraciones sobre política autonómica catalana, competencias y financiación territorial.",
+    tags: ["Cataluña", "Autonómico", "IFCN"]
+  },
+  {
+    id: "civio",
+    name: "Fundación Civio",
+    url: "https://civio.es",
+    level: "Nivel 3",
+    levelCategory: "observatorios",
+    levelName: "Observatorios y Finanzas Públicas",
+    description: "Organización periodística independiente que vigila el poder con datos: indultos, contratos de emergencia, puertas giratorias y ayudas.",
+    whyUseful: "Pioneros en rastreo del BOE automatizado y fiscalización del dinero público sin filtros partidistas.",
+    tags: ["Transparencia", "Indultos", "Contratación", "Puertas Giratorias"]
+  },
+  {
+    id: "transparencia-org",
+    name: "Transparencia Internacional España",
+    url: "https://transparencia.org.es",
+    level: "Nivel 3",
+    levelCategory: "observatorios",
+    levelName: "Observatorios y Finanzas Públicas",
+    description: "Capítulo español de Transparency International. Evalúa índices de corrupción, transparencia en partidos y contrataciones públicas.",
+    whyUseful: "Aporta comparativas internacionales y métricas contrastadas de calidad institucional y prevención de la corrupción.",
+    tags: ["Corrupción", "Integridad", "Partidos"]
+  },
+  {
+    id: "consejo-transparencia",
+    name: "Consejo de Transparencia y Buen Gobierno",
+    url: "https://www.consejodetransparencia.es",
+    level: "Nivel 3",
+    levelCategory: "observatorios",
+    levelName: "Observatorios y Finanzas Públicas",
+    description: "Organismo público independiente que vela por el cumplimiento del derecho ciudadano de acceso a la información pública en España.",
+    whyUseful: "Permite consultar resoluciones que obligan al Gobierno y a ministerios a revelar datos previamente ocultos.",
+    tags: ["Acceso Información", "Resoluciones", "Gobernanza"]
+  },
+  {
+    id: "casos-aislados",
+    name: "Casos Aislados",
+    url: "https://casos-aislados.com",
+    level: "Nivel 3",
+    levelCategory: "observatorios",
+    levelName: "Observatorios y Finanzas Públicas",
+    description: "Base de datos ciudadana colaborativa de casos de corrupción política investigados judicialmente en España.",
+    whyUseful: "Mapa cronológico de tramas, piezas judiciales y estimaciones del dinero público presuntamente desviado (usar bajo regla de corroboración judicial).",
+    tags: ["Corrupción", "Casos Judiciales", "Base de Datos"]
+  },
+  {
+    id: "opensecrets",
+    name: "OpenSecrets",
+    url: "https://www.opensecrets.org",
+    level: "Nivel 3",
+    levelCategory: "observatorios",
+    levelName: "Observatorios y Finanzas Públicas",
+    description: "Base de datos de rastreo de dinero, donaciones de campaña y grupos de lobby en la política internacional y EE.UU.",
+    whyUseful: "Útil para auditar influencias geopolíticas y financiación exterior en temas de defensa y acuerdos multilaterales.",
+    tags: ["Lobbies", "Financiación", "Internacional"]
+  },
+  {
+    id: "poletika",
+    name: "Poletika",
+    url: "https://poletika.org",
+    level: "Nivel 3",
+    levelCategory: "observatorios",
+    levelName: "Observatorios y Finanzas Públicas",
+    description: "Observatorio ciudadano impulsado por diversas ONG que vigila los compromisos políticos en justicia social, sanidad, cooperación y clima.",
+    whyUseful: "Rastrea la evolución entre lo que los partidos prometen en campaña y lo que posteriormente votan en el Parlamento.",
+    tags: ["Justicia Social", "Seguimiento", "ONGs"]
+  },
+  {
+    id: "el-congreso-en-tu-mano",
+    name: "El Congreso en tu Mano",
+    url: "https://www.elcongresoentumano.es",
+    level: "Nivel 4",
+    levelCategory: "radares",
+    levelName: "Radares Parlamentarios y Electorales",
+    description: "Radar cívico interactivo que recopila y desglosa las votaciones nominales de leyes y decretos del Congreso (histórico 2011-2023) con test de afinidad.",
+    whyUseful: "Trampolín ideal para saber qué votó cada diputado o formación política, con enlaces directos a las iniciativas del Congreso.",
+    tags: ["Radar Parlamentario", "Votaciones", "Test Afinidad", "Leyes"]
+  },
+  {
+    id: "info29n",
+    name: "29N · Qué propone cada partido",
+    url: "https://info29n.com/#inicio",
+    level: "Nivel 4",
+    levelCategory: "radares",
+    levelName: "Radares Parlamentarios y Electorales",
+    description: "Buscador temático de propuestas electorales por partidos. Cuenta con volcado estructurado directo en formato JSON.",
+    whyUseful: "Permite contrastar programas electorales por temas específicos (fiscalidad, pensiones, vivienda) de forma ágil.",
+    tags: ["Programas Electorales", "Propuestas", "Comparador"]
+  },
+  {
+    id: "jmail-world",
+    name: "Jmail.world (Archivos Desclasificados)",
+    url: "https://jmail.world",
+    level: "Nivel 5",
+    levelCategory: "desclasificados",
+    levelName: "Repositorios de Documentos Desclasificados",
+    description: "Buscador de documentos y registros liberados por comisiones de investigación del Congreso y el Departamento de Justicia de EE. UU.",
+    whyUseful: "Fuente secundaria específica para consultas sobre redes de influencia internacional basadas exclusivamente en desclasificaciones judiciales.",
+    tags: ["Desclasificados", "Judicial", "Casos Específicos"]
+  }
+];

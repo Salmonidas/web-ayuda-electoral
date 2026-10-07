@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiscalizador Electoral España | Voto Informado y Fuentes Oficiales con IA</title>
+  
+  <meta name="description" content="Herramienta cívica e independiente para la ciudadanía española. Usa la Inteligencia Artificial para contrastar promesas, leyes del BOE, votaciones en el Congreso y encuadres mediáticos con rigor y objetividad.">
+  <meta name="keywords" content="elecciones españa, voto informado, fiscalizador electoral, gemini gems, chatgpt, boe, congreso de los diputados, fact checking, verificacion, politica espana, transparencia">
+  <meta name="author" content="Comunidad Cívica Española">
+  <meta name="robots" content="index, follow">
+
+  <!-- Canonical & Favicon -->
+  <link rel="canonical" href="https://salmonidas.github.io/web-ayuda-electoral/">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://salmonidas.github.io/web-ayuda-electoral/">
+  <meta property="og:title" content="Fiscalizador Electoral España | Voto Informado y Fuentes Oficiales con IA">
+  <meta property="og:description" content="Auditoría ciudadana con IA: contrasta promesas políticas, votaciones reales en el Parlamento y leyes oficiales sin sesgos ni polarización.">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Fiscalizador Electoral España | Voto Informado con IA">
+  <meta property="twitter:description" content="Herramienta cívica para transformar la IA en un auditor independiente de promesas políticas y fuentes oficiales.">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="./" class="brand">
+        <div class="brand-icon">⚖️</div>
+        <span>Fiscalizador Electoral</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="./" class="nav-link" style="color: var(--accent-primary); font-weight: 700;">El Prompt</a></li>
+          <li><a href="./tutorial/" class="nav-link">Tutoriales IA</a></li>
+          <li><a href="./fuentes/" class="nav-link">Fuentes Oficiales</a></li>
+          <li><a href="./comunidad/" class="nav-link">Participar</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a id="repo-link" href="https://github.com/Salmonidas/web-ayuda-electoral" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ver repositorio en GitHub" aria-label="Repositorio de GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+
+        <button id="theme-toggle" class="btn-icon" type="button" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema">
+          <span id="theme-icon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Focused Hero Section -->
+    <section class="hero-section" style="padding: 3.5rem 0 2rem;">
+      <div class="container">
+        <div class="hero-pill">
+          <span class="pill-dot"></span>
+          Iniciativa Cívica Abierta · Neutralidad Documental · Democracia Continua
+        </div>
+
+        <h1 class="hero-title">
+          Auditoría cívica con Inteligencia Artificial <br>
+          <span class="gradient-text">sin ideologías, con datos oficiales y hechos reales</span>
+        </h1>
+
+        <p class="hero-desc">
+          Esta plataforma <strong>no defiende partidos ni emite opiniones políticas</strong>. Su único cometido es poner la Inteligencia Artificial al servicio de la ciudadanía para contrastar la realidad frente a fuentes primarias oficiales (BOE, diarios de sesiones del Congreso, INE y registros públicos): convenios laborales sectoriales, transparencia en subvenciones y desmentido de relatos del presente y del pasado.
+        </p>
+
+        <div class="hero-actions">
+          <button id="hero-copy-prompt" class="btn btn-primary" type="button">
+            📋 Copiar prompt de fiscalización
+          </button>
+          <a href="./tutorial/" class="btn btn-secondary">
+            📖 Guía para configurar tu IA
+          </a>
+          <a href="./fuentes/" class="btn btn-secondary">
+            🏛️ Directorio de fuentes oficiales
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Prompt Section -->
+    <section id="prompt" class="section" style="padding-top: 1rem; border-top: none;">
+      <div class="container">
+        <div class="prompt-container">
+          <div class="prompt-toolbar">
+            <div class="prompt-meta">
+              <span id="prompt-version-badge" class="prompt-badge">v1.0.0</span>
+            </div>
+
+            <div class="prompt-tabs">
+              <button class="tab-btn active" data-target="view-code" type="button">Texto completo</button>
+              <button class="tab-btn" data-target="view-steps" type="button">Protocolo (8 pasos)</button>
+              <button class="tab-btn" data-target="view-compare" type="button">Comparar mi prompt</button>
+            </div>
+
+            <button id="btn-copy-prompt" class="btn btn-primary" type="button">
+              Copiar prompt completo
+            </button>
+          </div>
+
+          <!-- Code View -->
+          <div id="view-code" class="prompt-content-view active">
+            <pre class="code-viewer"><code id="prompt-code-viewer">Cargando prompt oficial...</code></pre>
+          </div>
+
+          <!-- Steps View -->
+          <div id="view-steps" class="prompt-content-view">
+            <div id="steps-container" class="steps-grid"></div>
+          </div>
+
+          <!-- Compare View -->
+          <div id="view-compare" class="prompt-content-view">
+            <div class="comparator-panel">
+              <div class="comparator-header">
+                <div class="comparator-icon">🔍</div>
+                <div>
+                  <h3 class="comparator-title">Comparador de Versiones: ¿Tienes tu Gem o GPT al día?</h3>
+                  <p class="comparator-subtitle">
+                    Pega abajo las instrucciones que estás usando actualmente en tu IA. El comparador analizará de forma realista el contenido (sin falsos positivos por espacios o saltos de línea) y te indicará de forma concisa si es idéntico o qué novedades exactas incluye la versión web oficial.
+                  </p>
+                </div>
+              </div>
+
+              <div class="comparator-input-wrap">
+                <textarea id="user-prompt-input" class="comparator-textarea" placeholder="Pega aquí el prompt que tienes configurado en Gemini Gems, ChatGPT, Claude o tu cliente local..." rows="7" spellcheck="false"></textarea>
+                <div class="comparator-actions">
+                  <button id="btn-run-compare" class="btn btn-primary" type="button">
+                    ⚡ Comparar con Versión Oficial
+                  </button>
+                  <button id="btn-clear-compare" class="btn btn-secondary" type="button">
+                    🗑️ Limpiar
+                  </button>
+                  <button id="btn-sample-compare" class="btn btn-secondary" type="button" style="margin-left: auto;">
+                    🧪 Probar con ejemplo desactualizado
+                  </button>
+                </div>
+              </div>
+
+              <div id="compare-result-area" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Verdicts Chips Bar -->
+        <div class="verdicts-wrap" style="margin-top: 2rem;">
+          <div class="verdicts-title">
+            <span>🧭</span>
+            <span>Sistema de Veredictos Visuales del Prompt:</span>
+          </div>
+          <div id="verdicts-container" class="verdicts-grid"></div>
+        </div>
+
+        <!-- Year-Round Civic Action & Radical Neutrality Section -->
+        <div style="margin-top: 3.5rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 2.5rem;">
+          <div style="text-align: center; max-width: 48rem; margin: 0 auto 2rem;">
+            <span class="section-tag" style="color: var(--accent-civic);">Democracia Continua</span>
+            <h2 style="font-size: clamp(1.4rem, 2.8vw, 2rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.75rem;">
+              Más allá del voto: Información y acción ciudadana real los 365 días del año
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 0.98rem; line-height: 1.6;">
+              La responsabilidad cívica no empieza ni termina al depositar un sobre en una urna cada cuatro años. Este prompt es una herramienta viva concebida para tu vida diaria: un escudo frente a la desinformación para conocer <strong>qué es un hecho demostrado y qué es un relato inventado</strong>, y saber qué vías y cauces oficiales existen para actuar.
+            </p>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.25rem;">
+            <!-- Box 1: Laboral y Convenios -->
+            <div style="background: var(--bg-primary); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
+              <span style="font-size: 1.6rem; display: block; margin-bottom: 0.6rem;">💼</span>
+              <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Convenios y Normativa Laboral</h3>
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.5;">
+                Investiga convenios colectivos sectoriales publicados en boletines oficiales (REGCON / BOE), tablas salariales reguladas por ley y derechos del Estatuto de los Trabajadores sin intermediarios ni sesgos políticos.
+              </p>
+            </div>
+
+            <!-- Box 2: Sindicatos, Patronales y Subvenciones -->
+            <div style="background: var(--bg-primary); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
+              <span style="font-size: 1.6rem; display: block; margin-bottom: 0.6rem;">🤝</span>
+              <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Transparencia en Sindicatos y ONGs</h3>
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.5;">
+                Audita con datos de Hacienda (BDNS) qué subvenciones públicas reales reciben partidos, sindicatos, asociaciones empresariales y ONGs, comprobando su destino oficial sin filtros partidistas.
+              </p>
+            </div>
+
+            <!-- Box 3: Acción Ciudadana Real -->
+            <div style="background: var(--bg-primary); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
+              <span style="font-size: 1.6rem; display: block; margin-bottom: 0.6rem;">📢</span>
+              <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Saber Cómo Tomar Acciones Reales</h3>
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.5;">
+                Conoce las vías formales para actuar: denuncias ante la Inspección de Trabajo, solicitudes amparadas en la Ley de Transparencia, alegaciones a leyes en consulta pública y peticiones al Parlamento.
+              </p>
+            </div>
+
+            <!-- Box 4: Hemeroteca e Historia Factual -->
+            <div style="background: var(--bg-primary); padding: 1.5rem; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
+              <span style="font-size: 1.6rem; display: block; margin-bottom: 0.6rem;">📜</span>
+              <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.4rem;">Hechos Reales vs. Mitos Inventados</h3>
+              <p style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.5;">
+                ¿Ocurrió de verdad o es una leyenda urbana política? Pídele a la IA contrastar sucesos del pasado acudiendo al BOE original de la época, sentencias judiciales firmes y diarios de sesiones.
+              </p>
+            </div>
+          </div>
+
+          <!-- Privacy & Year-Round Invitation Banner -->
+          <div style="margin-top: 1.75rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem;">
+            <div style="margin-bottom: 0.75rem;">
+              <strong style="color: var(--text-primary); font-size: 1rem; display: block; margin-bottom: 0.25rem;">Democracia continua y acción cívica permanente</strong>
+              <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6; margin: 0;">
+                Configura este prompt como asistente en Gemini Gems, ChatGPT o Claude. Utilízalo en cualquier momento del año para auditar decisiones legislativas, contrastar declaraciones públicas y consultar los cauces formales para participar o presentar reclamaciones ante las administraciones públicas.
+              </p>
+            </div>
+            <div style="padding-top: 0.75rem; border-top: 1px solid var(--border-subtle); font-size: 0.83rem; color: var(--text-muted); line-height: 1.5;">
+              <strong style="color: var(--text-secondary);">Aviso de responsabilidad sobre datos particulares:</strong> Si decides aportar documentos privados como nóminas o contratos laborales en tus consultas, ten presente que lo haces bajo tu propia responsabilidad respecto al tratamiento de datos de la IA que utilices. El prompt está optimizado para investigar normativas oficiales, convenios colectivos públicos y leyes del BOE.
+            </div>
+          </div>
+
+          <!-- Open Transparency & Bias Audit Banner -->
+          <div style="margin-top: 1rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-left: 3px solid var(--accent-civic); border-radius: var(--radius-md); padding: 1.5rem;">
+            <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 0.5rem;">
+              <strong style="color: var(--text-primary); font-size: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <span>🗳️</span> Gobernanza Abierta: El creador no decide solo, decide la comunidad
+              </strong>
+              <a href="https://github.com/Salmonidas/web-ayuda-electoral/issues?q=is%3Aissue+is%3Aopen" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.4rem 0.85rem;">
+                💬 Ver debates abiertos y votar ↗
+              </a>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6; margin: 0 0 0.75rem;">
+              Para garantizar una neutralidad real, <strong>el autor de este proyecto no actúa como decisor único ni impone su criterio</strong>. Todas las propuestas para incorporar fuentes, modificar instrucciones o corregir posibles sesgos se someten a escrutinio público en <strong>GitHub Issues</strong>.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; font-size: 0.82rem; color: var(--text-muted); background: var(--bg-primary); padding: 0.85rem 1rem; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+              <div><strong style="color: var(--text-primary);">1. Opina en abierto:</strong> Argumenta en cualquier issue aportando datos o enlaces oficiales.</div>
+              <div><strong style="color: var(--text-primary);">2. Vota con reacciones:</strong> Usa 👍 (a favor) o 👎 (en contra) para sumar tu voto al consenso.</div>
+              <div><strong style="color: var(--text-primary);">3. Manda el dato oficial:</strong> La normativa del BOE prevalece sobre opiniones personales o de partidos.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section Navigation Cards -->
+        <div style="margin-top: 3.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+          <a href="./tutorial/" class="hero-feature-card" style="padding: 1.75rem; text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; gap: 0.75rem;">
+            <div>
+              <span class="source-level-tag" style="margin-bottom: 0.5rem; display: inline-block;">Guías</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text-primary);">Configuración en tu IA</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Paso a paso para crear tu Gem en Gemini Gems, y configuraciones para ChatGPT, Claude Projects, Perplexity e IAs locales.
+              </p>
+            </div>
+            <span style="color: var(--accent-primary); font-size: 0.88rem; font-weight: 600; margin-top: auto;">Ver tutoriales ↗</span>
+          </a>
+
+          <a href="./fuentes/" class="hero-feature-card" style="padding: 1.75rem; text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; gap: 0.75rem;">
+            <div>
+              <span class="source-level-tag" style="margin-bottom: 0.5rem; display: inline-block;">Bases de datos</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text-primary);">Directorio de Fuentes</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Catálogo interactivo con 21 registros oficiales, boletines del BOE, REGCON laboral, subvenciones BDNS y verificadores acreditados.
+              </p>
+            </div>
+            <span style="color: var(--accent-primary); font-size: 0.88rem; font-weight: 600; margin-top: auto;">Explorar directorio ↗</span>
+          </a>
+
+          <a href="./comunidad/" class="hero-feature-card" style="padding: 1.75rem; text-decoration: none; display: flex; flex-direction: column; align-items: flex-start; gap: 0.75rem;">
+            <div>
+              <span class="source-level-tag" style="margin-bottom: 0.5rem; display: inline-block;">Comunidad</span>
+              <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.35rem; color: var(--text-primary);">Participación y Mejoras</h3>
+              <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.5;">
+                Propón nuevas fuentes oficiales, reporta posibles sesgos o sugiere mejoras al prompt mediante GitHub Issues.
+              </p>
+            </div>
+            <span style="color: var(--accent-primary); font-size: 0.88rem; font-weight: 600; margin-top: auto;">Cómo participar ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Fiscalizador Electoral España</h4>
+          <p>
+            Iniciativa cívica independiente para empoderar a la ciudadanía española en el uso riguroso y objetivo de la Inteligencia Artificial para el voto informado.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Navegación</h5>
+            <ul>
+              <li><a href="./">El Prompt</a></li>
+              <li><a href="./tutorial/">Tutoriales IA</a></li>
+              <li><a href="./fuentes/">Fuentes Oficiales</a></li>
+              <li><a href="./comunidad/">Participar</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Código Abierto</h5>
+            <ul>
+              <li><a id="footer-repo-link" href="https://github.com/Salmonidas/web-ayuda-electoral" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a></li>
+              <li><a href="https://github.com/Salmonidas/web-ayuda-electoral/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a></li>
+              <li><a href="https://gemini.google.com/gems/view" target="_blank" rel="noopener noreferrer">Gemini Gems</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Desarrollado con compromiso cívico · Sin cookies de seguimiento · Software libre
+        </div>
+        <div>
+          Proyecto alojado en GitHub Pages
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
