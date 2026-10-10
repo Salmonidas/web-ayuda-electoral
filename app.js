@@ -6,7 +6,7 @@ import {
   rawElectoralPrompt
 } from './data/promptData.js';
 
-document.addEventListener('DOMContentLoaded', () => {
+function initApp() {
   initTheme();
   renderPromptViewer();
   renderSteps();
@@ -17,7 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
   initCopyActions();
   initGitHubLinks();
   initPromptComparator();
-});
+  initGeminiDynamicTutorial();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
 
 
 function initTheme() {
@@ -449,7 +456,7 @@ function initPromptComparator() {
     const copyFromDiffBtn = document.getElementById('btn-copy-latest-from-diff');
     if (copyFromDiffBtn) {
       copyFromDiffBtn.addEventListener('click', () => {
-        copyToClipboard(rawElectoralPrompt, '¡Prompt oficial v1.0.0 copiado! Listo para actualizar en tu Gem o GPT.');
+        copyToClipboard(rawElectoralPrompt, `¡Prompt oficial v${promptMetadata.version} copiado! Listo para actualizar en tu Gem o GPT.`);
       });
     }
   };
@@ -471,6 +478,123 @@ Eres un fiscalizador cívico independiente. Tu función es contrastar promesas e
 - Comprueba si lo prometido se ha votado a favor o en contra.
 - Utiliza Maldita y Newtral para bulos.`;
       runComparison();
+    });
+  }
+}
+
+function initGeminiDynamicTutorial() {
+  const container = document.getElementById('gemini-tutorial-dynamic-area');
+  if (!container) return;
+
+  const noticeElement = document.getElementById('gemini-migration-notice');
+  const noticeIcon = document.getElementById('gemini-notice-icon');
+  const noticeTitle = document.getElementById('gemini-notice-title');
+  const noticeBadge = document.getElementById('gemini-notice-badge');
+  const noticeDesc = document.getElementById('gemini-notice-desc');
+  const toggleBtn = document.getElementById('btn-toggle-gemini-preview');
+
+  const heroIcon = document.getElementById('gemini-hero-icon');
+  const heroTitle = document.getElementById('gemini-hero-title');
+  const heroDesc = document.getElementById('gemini-hero-desc');
+
+  const step1Title = document.getElementById('gemini-step-1-title');
+  const step1Desc = document.getElementById('gemini-step-1-desc');
+  const step2Title = document.getElementById('gemini-step-2-title');
+  const step2Desc = document.getElementById('gemini-step-2-desc');
+  const step3Title = document.getElementById('gemini-step-3-title');
+  const step3Desc = document.getElementById('gemini-step-3-desc');
+  const step4Title = document.getElementById('gemini-step-4-title');
+  const step4Desc = document.getElementById('gemini-step-4-desc');
+
+  const MIGRATION_DATE = new Date('2026-11-17T00:00:00Z');
+
+  function render(isSkillsMode) {
+    if (isSkillsMode) {
+      if (noticeElement) noticeElement.classList.add('migrated');
+      if (noticeIcon) noticeIcon.textContent = '🚀';
+      if (noticeTitle) noticeTitle.textContent = 'Actualización oficial: Gemini Habilidades (Skills)';
+      if (noticeBadge) {
+        noticeBadge.textContent = 'Ecosistema Activo';
+        noticeBadge.style.color = '#10b981';
+        noticeBadge.style.background = 'rgba(16, 185, 129, 0.15)';
+      }
+      if (noticeDesc) {
+        noticeDesc.innerHTML = 'Google ha completado la migración de Gems a <strong>Habilidades (Skills)</strong>. Si tenías un Gem configurado previamente, se ha transferido automáticamente a tu cuenta. Ahora puedes invocar la fiscalización directamente en cualquier conversación activa escribiendo <code>@</code> seguido del nombre de tu habilidad o con <code>/</code>.';
+      }
+      if (toggleBtn) toggleBtn.textContent = '↩️ Ver Tutorial Clásico (Gems)';
+
+      if (heroIcon) heroIcon.textContent = '🧩';
+      if (heroTitle) heroTitle.textContent = '¿Por qué las Habilidades de Gemini son la opción recomendada?';
+      if (heroDesc) {
+        heroDesc.innerHTML = 'Las <strong>Habilidades de Gemini</strong> permiten activar al fiscalizador cívico de forma modular dentro de cualquier conversación cotidiana (escribiendo <em>@</em> y el nombre de tu habilidad o con <em>/</em>) sin necesidad de abrir chats aislados. Mantienen toda la potencia de navegación web de Google para contrastar hemerotecas, leyes oficiales y datos en tiempo real.';
+      }
+
+      if (step1Title) step1Title.textContent = 'Abre Habilidades de Gemini';
+      if (step1Desc) {
+        step1Desc.innerHTML = 'Inicia sesión en <a href="https://gemini.google.com/skills" target="_blank" rel="noopener noreferrer">gemini.google.com/skills</a> (o accede desde <strong>Ajustes → Habilidades</strong> en el panel lateral).';
+      }
+      if (step2Title) step2Title.textContent = 'Crea una Habilidad';
+      if (step2Desc) {
+        step2Desc.innerHTML = 'Pulsa en <strong>«Crear habilidad»</strong> (o <em>Create manually</em>) y nómbrala con el identificador que prefieras (por ejemplo <code>fiscalizador-electoral</code>).';
+      }
+      if (step3Title) step3Title.textContent = 'Pega las Instrucciones';
+      if (step3Desc) {
+        step3Desc.innerHTML = 'Pulsa en <strong>«Copiar Prompt»</strong> y pega el texto íntegro en las directrices de la habilidad. Guarda los cambios.';
+      }
+      if (step4Title) step4Title.textContent = 'Invoca en Cualquier Chat';
+      if (step4Desc) {
+        step4Desc.innerHTML = 'Escribe <strong>@</strong> seguido del nombre que le diste a tu habilidad o pulsa <strong>/</strong> en cualquier conversación de Gemini para auditar afirmaciones políticas sin salir del chat.';
+      }
+    } else {
+      if (noticeElement) noticeElement.classList.remove('migrated');
+      if (noticeIcon) noticeIcon.textContent = '⏳';
+      if (noticeTitle) noticeTitle.textContent = 'Evolución programada: De Gems a Habilidades (Skills)';
+      if (noticeBadge) {
+        noticeBadge.textContent = '17 Nov 2026';
+        noticeBadge.style.color = '';
+        noticeBadge.style.background = '';
+      }
+      if (noticeDesc) {
+        noticeDesc.innerHTML = 'A partir del 17/11/2026, Google migrará automáticamente todos los Gems a Habilidades (Skills). Si creas tu Gem hoy siguiendo este tutorial, se convertirá solo en una habilidad sin perder nada y podrás usarlo en cualquier chat escribiendo <code>@</code> seguido del nombre que le hayas asignado.';
+      }
+      if (toggleBtn) toggleBtn.textContent = '👁️ Previsualizar Habilidades';
+
+      if (heroIcon) heroIcon.textContent = '💎';
+      if (heroTitle) heroTitle.textContent = '¿Por qué Gemini Gems es la plataforma recomendada?';
+      if (heroDesc) {
+        heroDesc.innerHTML = 'El prompt fue concebido y probado originalmente en <strong>Gemini Gems</strong>, donde demostró una eficacia sobresaliente. Al disponer del motor de búsqueda web en directo de Google y capacidad para inspeccionar fuentes primarias oficiales, registros normativos y datos estructurados en tiempo real, contrasta promesas políticas con hipervínculos exactos y sin alucinaciones.';
+      }
+
+      if (step1Title) step1Title.textContent = 'Abre Gemini Gems';
+      if (step1Desc) {
+        step1Desc.innerHTML = 'Inicia sesión con tu cuenta de Google en <a href="https://gemini.google.com/gems/view" target="_blank" rel="noopener noreferrer">gemini.google.com/gems/view</a> o desde el menú lateral.';
+      }
+      if (step2Title) step2Title.textContent = 'Crea un "Nuevo Gem"';
+      if (step2Desc) {
+        step2Desc.innerHTML = 'Haz clic en <strong>"+ Nuevo Gem"</strong> (o <em>"Crear habilidades"</em> si tu cuenta ya tiene la nueva interfaz) y nómbralo <em>Fiscalizador Electoral España</em>.';
+      }
+      if (step3Title) step3Title.textContent = 'Pega las Instrucciones';
+      if (step3Desc) {
+        step3Desc.innerHTML = 'Pulsa en <strong>«Copiar Prompt»</strong> y pega el texto íntegro en el campo de <em>Instrucciones</em> del Gem.';
+      }
+      if (step4Title) step4Title.textContent = 'Guarda y Fiscaliza';
+      if (step4Desc) {
+        step4Desc.innerHTML = 'Guarda los cambios. Tendrás tu auditor cívico siempre disponible en el menú lateral de Gemini listo para responder.';
+      }
+    }
+  }
+
+  const storedPreference = sessionStorage.getItem('gemini-tutorial-preview-mode');
+  let isSkillsMode = storedPreference ? storedPreference === 'skills' : (new Date() >= MIGRATION_DATE);
+
+  render(isSkillsMode);
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', () => {
+      isSkillsMode = !isSkillsMode;
+      sessionStorage.setItem('gemini-tutorial-preview-mode', isSkillsMode ? 'skills' : 'gems');
+      render(isSkillsMode);
+      showToast(isSkillsMode ? 'Previsualizando tutorial de Habilidades (Skills)' : 'Tutorial clásico de Gemini Gems cargado');
     });
   }
 }

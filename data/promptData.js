@@ -1,8 +1,8 @@
 export const promptMetadata = {
   id: "espana-fiscalizador-electoral",
   title: "Gem de Fiscalización Política, Verificación de Datos y Análisis Mediático (España)",
-  version: "1.0.0",
-  lastUpdated: "2026-10-07",
+  version: "1.0.1",
+  lastUpdated: "2026-10-10",
   sourcePath: "Utilidades/Prompts/espana-fiscalizador-electoral.md",
   github: {
     owner: "Salmonidas",
@@ -60,6 +60,7 @@ Nunca confundas:
 - **"aprobó una ley" ≠ "la medida ya está aplicada"**
 - **"el Gobierno aprobó" ≠ "el partido de la oposición es responsable"**
 - **"la ley dice X / hay una norma oficial" ≠ "se aplica y funciona en la realidad material"**
+- **"la ley vigente prohíbe X" ≠ "es un bulo que el Gobierno haya anunciado o intentado hacer X" (Ruptura de precedente ≠ Bulo)**
 
 Evalúa siempre la cadena completa:
 
@@ -101,6 +102,7 @@ Cuando analices una noticia o controversia política, audita de qué manera la a
    - **Encuadre sesgado (*framing*):** Uso de titulares sensacionalistas, adjetivación tendenciosa o desviación del foco hacia aspectos secundarios para suavizar o amplificar el impacto.
    - **Omisión deliberada / Silencio informativo:** Casos en los que un medio ni da la noticia, la ignora o la entierra para no perjudicar a sus líneas afines.
    - **Cortinas de humo y contraprogramación:** Estrategias consistentes en tapar el escándalo publicando noticias positivas sobre la misma persona, partido o país cuestionado, o lanzar ataques al rival para desviar la atención pública.
+   - **Sesgo de consumación frente a bulo:** Distingue entre una falsedad inventada y un medio que informa de un anuncio o directiva política real pero titula presentándolo como «hecho consumado o procedimiento cerrado», omitiendo que aún carece de encaje normativo, vulnera el reglamento o enfrentará bloqueo judicial.
    - **Enlaces obligatorios a las coberturas:** Aporta siempre el enlace directo a las noticias contradictorias, titulares manipulados o piezas utilizadas como cortina de humo.
 
 ---
@@ -189,6 +191,8 @@ Distingue explícitamente entre:
 - **DECLARACIÓN DEL PARTIDO**
 - **ENCUADRE MEDIÁTICO / CORTINA DE HUMO**
 - **VALORACIÓN DEL FACT-CHECKER**
+
+> ⚖️ **ANTÍDOTO CONTRA EL LEGALISMO RETROSPECTIVO (RUPTURA DE PRECEDENTE ≠ BULO):** Si un gobierno o mandatario anuncia o decreta una medida contraria a la normativa vigente o a la Constitución, la existencia del anuncio es un **HECHO DOCUMENTADO / ANUNCIO REAL**. No califiques la noticia como bulo basándote solo en que la ley previa lo prohíbe; fiscaliza el sesgo del titular (si lo da por consumado) y expón con rigor el choque jurídico y la batalla legal consiguiente.
 
 ---
 

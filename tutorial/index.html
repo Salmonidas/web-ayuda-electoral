@@ -63,49 +63,73 @@
           </div>
         </div>
 
-        <!-- Gemini Gems Main Banner -->
-        <div class="tutorial-banner">
-          <div class="banner-icon">💎</div>
-          <div class="banner-text">
-            <h3>¿Por qué Gemini Gems es la plataforma recomendada?</h3>
-            <p>
-              El prompt fue concebido y probado originalmente en <strong>Gemini Gems</strong>, donde demostró una eficacia sobresaliente. Al disponer del motor de búsqueda web en directo de Google y capacidad para inspeccionar fuentes primarias y volcados de datos estructurados (como <em>info29n.com/datos.json</em> o la arquitectura parlamentaria de <em>elcongresoentumano.es</em>), contrasta promesas políticas con hipervínculos exactos y sin alucinaciones.
-            </p>
-          </div>
-        </div>
-
-        <!-- 4 Steps Tutorial Flow for Gemini -->
-        <div class="tutorial-flow">
-          <div class="flow-step-card">
-            <div class="flow-badge">1</div>
-            <h4>Abre Gemini Gems</h4>
-            <p>
-              Inicia sesión con tu cuenta de Google en <a href="https://gemini.google.com/gems/view" target="_blank" rel="noopener noreferrer">gemini.google.com/gems/view</a>.
-            </p>
-          </div>
-
-          <div class="flow-step-card">
-            <div class="flow-badge">2</div>
-            <h4>Crea un "Nuevo Gem"</h4>
-            <p>
-              Haz clic en <strong>"+ Nuevo Gem"</strong> y nómbralo <em>Fiscalizador Electoral España</em>.
-            </p>
+        <!-- Dynamic Gemini Gems / Skills Tutorial Area -->
+        <div id="gemini-tutorial-dynamic-area">
+          <!-- Notification Banner -->
+          <div id="gemini-migration-notice" class="gemini-migration-banner">
+            <div class="gemini-migration-info">
+              <div class="gemini-migration-icon" id="gemini-notice-icon">⏳</div>
+              <div>
+                <div class="gemini-migration-title">
+                  <span id="gemini-notice-title">Evolución programada: De Gems a Habilidades (Skills)</span>
+                  <span id="gemini-notice-badge" class="gemini-preview-badge">17 Nov 2026</span>
+                </div>
+                <p id="gemini-notice-desc" class="gemini-migration-desc">
+                  A partir del 17/11/2026, Google migrará automáticamente todos los Gems a Habilidades (Skills). Si creas tu Gem hoy siguiendo este tutorial, se convertirá solo en una habilidad sin perder nada y podrás usarlo en cualquier chat escribiendo <code>@</code> seguido del nombre que le hayas asignado.
+                </p>
+              </div>
+            </div>
+            <div class="gemini-migration-actions">
+              <button id="btn-toggle-gemini-preview" type="button" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.5rem 0.9rem;">
+                👁️ Previsualizar Habilidades
+              </button>
+            </div>
           </div>
 
-          <div class="flow-step-card">
-            <div class="flow-badge">3</div>
-            <h4>Pega las Instrucciones</h4>
-            <p>
-              Pulsa en <strong>«Copiar Prompt»</strong> y pega el texto íntegro en el campo de <em>Instrucciones</em> del Gem.
-            </p>
+          <!-- Gemini Main Platform Banner -->
+          <div id="gemini-hero-banner" class="tutorial-banner">
+            <div class="banner-icon" id="gemini-hero-icon">💎</div>
+            <div class="banner-text">
+              <h3 id="gemini-hero-title">¿Por qué Gemini Gems es la plataforma recomendada?</h3>
+              <p id="gemini-hero-desc">
+                El prompt fue concebido y probado originalmente en <strong>Gemini Gems</strong>, donde demostró una eficacia sobresaliente. Al disponer del motor de búsqueda web en directo de Google y capacidad para inspeccionar fuentes primarias oficiales, registros normativos y datos estructurados en tiempo real, contrasta promesas políticas con hipervínculos exactos y sin alucinaciones.
+              </p>
+            </div>
           </div>
 
-          <div class="flow-step-card">
-            <div class="flow-badge">4</div>
-            <h4>Guarda y Fiscaliza</h4>
-            <p>
-              Guarda los cambios. Tendrás tu auditor cívico siempre disponible en el menú lateral de Gemini listo para responder.
-            </p>
+          <!-- 4 Steps Tutorial Flow for Gemini -->
+          <div id="gemini-steps-flow" class="tutorial-flow">
+            <div class="flow-step-card">
+              <div class="flow-badge">1</div>
+              <h4 id="gemini-step-1-title">Abre Gemini Gems</h4>
+              <p id="gemini-step-1-desc">
+                Inicia sesión con tu cuenta de Google en <a href="https://gemini.google.com/gems/view" target="_blank" rel="noopener noreferrer">gemini.google.com/gems/view</a> o desde el menú lateral.
+              </p>
+            </div>
+
+            <div class="flow-step-card">
+              <div class="flow-badge">2</div>
+              <h4 id="gemini-step-2-title">Crea un "Nuevo Gem"</h4>
+              <p id="gemini-step-2-desc">
+                Haz clic en <strong>"+ Nuevo Gem"</strong> (o <em>"Crear habilidades"</em> si tu cuenta ya tiene la nueva interfaz) y nómbralo <em>Fiscalizador Electoral España</em>.
+              </p>
+            </div>
+
+            <div class="flow-step-card">
+              <div class="flow-badge">3</div>
+              <h4 id="gemini-step-3-title">Pega las Instrucciones</h4>
+              <p id="gemini-step-3-desc">
+                Pulsa en <strong>«Copiar Prompt»</strong> y pega el texto íntegro en el campo de <em>Instrucciones</em> del Gem.
+              </p>
+            </div>
+
+            <div class="flow-step-card">
+              <div class="flow-badge">4</div>
+              <h4 id="gemini-step-4-title">Guarda y Fiscaliza</h4>
+              <p id="gemini-step-4-desc">
+                Guarda los cambios. Tendrás tu auditor cívico siempre disponible en el menú lateral de Gemini listo para responder.
+              </p>
+            </div>
           </div>
         </div>
 
