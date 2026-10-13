@@ -3,28 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fiscalizador Electoral España | Voto Informado y Fuentes Oficiales con IA</title>
+  <title>Fiscalizador Cívico con IA | Elecciones 29N, Votaciones y Convenios</title>
   
-  <meta name="description" content="Herramienta cívica e independiente para la ciudadanía española. Usa la Inteligencia Artificial para contrastar promesas, leyes del BOE, votaciones en el Congreso y encuadres mediáticos con rigor y objetividad.">
-  <meta name="keywords" content="elecciones españa, voto informado, fiscalizador electoral, gemini gems, chatgpt, boe, congreso de los diputados, fact checking, verificacion, politica espana, transparencia">
+  <meta name="description" content="Audita las elecciones del 29N y la realidad ciudadana: consulta qué votó cada partido, contrasta programas electorales, convenios y subvenciones con tu IA.">
+  <meta name="keywords" content="elecciones 29n, elecciones espana, voto informado, fiscalizador electoral, que voto cada partido, convenios colectivos regcon, subvenciones bdns, fact checking espana, transparencia congreso">
   <meta name="author" content="Comunidad Cívica Española">
   <meta name="robots" content="index, follow">
   <meta name="google-site-verification" content="olWP1Oxlj0I75JQlZY0_yAyUCAZ7OlD-0ej_Oe9H-rc">
 
   <!-- Canonical & Favicon -->
   <link rel="canonical" href="https://salmonidas.github.io/web-ayuda-electoral/">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚖️</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://salmonidas.github.io/web-ayuda-electoral/">
-  <meta property="og:title" content="Fiscalizador Electoral España | Voto Informado y Fuentes Oficiales con IA">
-  <meta property="og:description" content="Auditoría ciudadana con IA: contrasta promesas políticas, votaciones reales en el Parlamento y leyes oficiales sin sesgos ni polarización.">
+  <meta property="og:title" content="Fiscalizador Cívico con IA | Elecciones 29N, Votaciones y Convenios">
+  <meta property="og:description" content="Audita las elecciones del 29N y la realidad ciudadana: consulta qué votó cada partido, contrasta programas electorales, convenios y subvenciones con tu IA.">
+  <meta property="og:image" content="https://salmonidas.github.io/web-ayuda-electoral/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fiscalizador Cívico con IA - Auditoría electoral 29N y transparencia oficial">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Fiscalizador Electoral España | Voto Informado con IA">
-  <meta property="twitter:description" content="Herramienta cívica para transformar la IA en un auditor independiente de promesas políticas y fuentes oficiales.">
+  <meta property="twitter:title" content="Fiscalizador Cívico con IA | Elecciones 29N, Votaciones y Convenios">
+  <meta property="twitter:description" content="Audita las elecciones del 29N y la realidad ciudadana: consulta qué votó cada partido, contrasta programas electorales, convenios y subvenciones con tu IA.">
+  <meta property="twitter:image" content="https://salmonidas.github.io/web-ayuda-electoral/og-image.png">
+
+  <!-- Structured Data: WebSite & FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://salmonidas.github.io/web-ayuda-electoral/#website",
+        "url": "https://salmonidas.github.io/web-ayuda-electoral/",
+        "name": "Fiscalizador Cívico con IA",
+        "description": "Auditoría ciudadana para el 29N y la vida pública con fuentes oficiales y cualquier Inteligencia Artificial.",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://salmonidas.github.io/web-ayuda-electoral/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cómo puedo contrastar lo que promete un partido para el 29N con lo que votó de verdad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pídele a tu IA que compare una propuesta electoral concreta con el registro histórico de votaciones del Congreso. La instrucción le exige contrastar los diarios de sesiones y portales de transparencia parlamentaria para detallar qué votó exactamente cada grupo en iniciativas similares, con enlaces oficiales y sin interpretaciones de parte."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo detecto si una declaración o titular sobre las elecciones es falso o un bulo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Con el fiscalizador activo, puedes pasarle a tu IA el titular o afirmación que quieras verificar. Su protocolo le obliga a contrastar los datos contra agencias de fact-checking acreditadas (IFCN) y fuentes primarias oficiales (BOE, INE, ministerios) para indicarte si los datos son reales, manipulados o sacados de contexto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Esta herramienta sirve solo para elecciones o también para después del 29N?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sirve de manera permanente. El 29N es la cita electoral, pero el fiscalizador está diseñado para auditar toda la legislatura: seguir los plenos del Congreso, analizar leyes aprobadas en el BOE, consultar convenios laborales y exigir transparencia a instituciones, sindicatos y patronales en el día a día."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Dónde puedo consultar tablas salariales de convenios o subvenciones de entidades?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puedes solicitar a la IA que localice las tablas salariales oficiales de convenios colectivos vigentes en el registro público REGCON, o que consulte la Base de Datos Nacional de Subvenciones (BDNS) para conocer las ayudas públicas otorgadas a sindicatos, patronales o asociaciones, sin necesidad de aportar datos personales ni nóminas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué necesito para usarlo en mi IA y qué pasa con mi privacidad?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es 100% gratuito y sin registros. Solo debes copiar el prompt de esta web y pegarlo en la ventana de chat de tu asistente de inteligencia artificial habitual. La conversación transcurre en tu propio chat y no recopilamos ningún dato."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <link rel="stylesheet" href="./styles.css">
 </head>
@@ -246,6 +314,91 @@
               <div><strong style="color: var(--text-primary);">2. Vota con reacciones:</strong> Usa 👍 (a favor) o 👎 (en contra) para sumar tu voto al consenso.</div>
               <div><strong style="color: var(--text-primary);">3. Manda el dato oficial:</strong> La normativa del BOE prevalece sobre opiniones personales o de partidos.</div>
             </div>
+          </div>
+        </div>
+
+        <!-- Sección de Dudas Ciudadanas y Preguntas Frecuentes (FAQ) -->
+        <div id="faq-ciudadana" style="margin-top: 3.5rem;">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <span class="source-level-tag" style="margin-bottom: 0.5rem; display: inline-block;">Dudas Ciudadanas</span>
+            <h2 style="font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.5rem; color: var(--text-primary);">
+              Preguntas Frecuentes sobre el Fiscalizador
+            </h2>
+            <p style="color: var(--text-secondary); font-size: 0.92rem; max-width: 650px; margin: 0 auto;">
+              Respuestas directas sobre cómo auditar el 29N, verificar leyes y convenios, y utilizar la herramienta con total independencia.
+            </p>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span>🗳️</span>
+                <strong>¿Cómo puedo contrastar lo que promete un partido para el 29N con lo que votó de verdad?</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>Pídele a tu IA que compare una propuesta electoral concreta con el registro histórico de votaciones del Congreso. La instrucción le exige contrastar los diarios de sesiones y portales de transparencia parlamentaria para detallar qué votó exactamente cada grupo en iniciativas similares, con enlaces oficiales y sin interpretaciones de parte.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span>🔍</span>
+                <strong>¿Cómo detecto si una declaración o titular sobre las elecciones es falso o un bulo?</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>Con el fiscalizador activo, puedes pasarle a tu IA el titular o afirmación que quieras verificar. Su protocolo le obliga a contrastar los datos contra agencias de fact-checking acreditadas (IFCN) y fuentes primarias oficiales (BOE, INE, ministerios) para indicarte si los datos son reales, manipulados o sacados de contexto.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span>⚖️</span>
+                <strong>¿Esta herramienta sirve solo para elecciones o también para después del 29N?</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>Sirve de manera permanente. El 29N es la cita electoral, pero el fiscalizador está diseñado para auditar toda la legislatura: seguir los plenos del Congreso, analizar leyes aprobadas en el BOE, consultar convenios laborales y exigir transparencia a instituciones, sindicatos y patronales en el día a día.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span>📊</span>
+                <strong>¿Dónde puedo consultar tablas salariales de convenios o subvenciones de entidades?</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>Puedes solicitar a la IA que localice las tablas salariales oficiales de convenios colectivos vigentes en el registro público REGCON, o que consulte la Base de Datos Nacional de Subvenciones (BDNS) para conocer las ayudas públicas otorgadas a sindicatos, patronales o asociaciones, sin necesidad de aportar datos personales ni nóminas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span>🛡️</span>
+                <strong>¿Qué necesito para usarlo en mi IA y qué pasa con mi privacidad?</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>Es 100% gratuito y sin registros. Solo debes copiar el prompt de esta web y pegarlo en la ventana de chat de tu asistente de inteligencia artificial habitual. La conversación transcurre en tu propio chat y no recopilamos ningún dato.</p>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 1.5rem; margin-bottom: 1.5rem;">
+            <p style="color: var(--text-muted); font-size: 0.88rem;">
+              ¿Buscas consultas avanzadas o ejemplos para tu día a día? 
+              <a href="./tutorial/" style="color: var(--accent-primary); text-decoration: underline; font-weight: 600;">Consulta los patrones prácticos en el tutorial ↗</a>
+            </p>
           </div>
         </div>
 
