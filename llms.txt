@@ -1,0 +1,28 @@
+# Fiscalizador Cívico con IA - Elecciones 29N y Transparencia España
+
+> Prompt de sistema, directrices y catálogo de fuentes oficiales para auditar compromisos electorales, votaciones nominales parlamentarias, convenios laborales (REGCON) y subvenciones públicas (BDNS) con cualquier modelo de Inteligencia Artificial.
+
+El Fiscalizador Cívico es una iniciativa comunitaria, independiente y de código abierto (licencia MIT) diseñada para dotar a la ciudadanía española de una metodología rigurosa para auditar la vida pública mediante Inteligencia Artificial (Gemini, ChatGPT, Claude, Perplexity y modelos locales).
+
+El sistema opera bajo un protocolo estricto de jerarquía probatoria (6 niveles), neutralidad aséptica, trazabilidad obligatoria con hipervínculos a registros oficiales y el principio de "Follow The Money" (contraste de declaraciones políticas con partidas presupuestarias reales y convenios colectivos).
+
+## Documentación y Enlaces Clave
+
+- [El Prompt Oficial (Inicio)](https://salmonidas.github.io/web-ayuda-electoral/): Vista principal con el prompt completo v1.0.2 listo para copiar, características técnicas y preguntas frecuentes.
+- [Directorio de Fuentes y Evidencias](https://salmonidas.github.io/web-ayuda-electoral/fuentes/): Catálogo de 22 fuentes clasificadas en 6 niveles (BOE, Registros Parlamentarios, BDNS, Contratación del Estado, REGCON, Fact-Checkers IFCN/EFCSN).
+- [Tutoriales de Configuración IA](https://salmonidas.github.io/web-ayuda-electoral/tutorial/): Guías paso a paso para configurar el fiscalizador en Gemini Gems, instrucciones personalizadas de ChatGPT, proyectos de Claude, Perplexity y modelos locales.
+- [Gobernanza y Participación Cívica](https://salmonidas.github.io/web-ayuda-electoral/comunidad/): Normas para sugerir nuevas fuentes primarias, auditar posibles sesgos ideológicos y contribuir vía GitHub Issues.
+
+## Jerarquía de Evidencias (6 Niveles)
+
+1. **Nivel 1 - Evidencia Primaria Oficial:** Boletines oficiales (BOE, diarios autonómicos y provinciales), registros de votaciones del Congreso y Senado, Plataforma de Contratación del Estado, BDNS, REGCON y Tribunal de Cuentas.
+2. **Nivel 2 - Fact-Checking Acreditado:** Verificadores signatarios de IFCN o EFCSN (Maldita.es, Newtral, EFE Verifica, Verificat, Reuters Fact Check).
+3. **Nivel 3 - Observatorios y Finanzas Públicas:** Civio, Transparencia Internacional España, CTBG, OpenSecrets, WhoFundedGenocide. Extracción aséptica de datos brutos.
+4. **Nivel 4 - Radares Cívicos y Agregadores:** Info29N, El Congreso en tu mano. Usados exclusivamente como trampolines temáticos sin adoptar etiquetas cualitativas automatizadas.
+5. **Nivel 5 - Repositorios Desclasificados Judiciales:** CENDOJ, sumarios judiciales y archivos desclasificados con atribución legal directa.
+6. **Nivel 6 - Hemeroteca Comparada:** Análisis cruzado de medios de comunicación generalistas (Espectro Centro-Izquierda vs. Centro-Derecha) y prensa autonómica para auditar encuadres informativos.
+
+## Opcional y Repositorio
+
+- [Repositorio en GitHub](https://github.com/Salmonidas/web-ayuda-electoral): Código fuente, historial de versiones y archivo del prompt.
+- [GitHub Issues](https://github.com/Salmonidas/web-ayuda-electoral/issues): Canal público para proponer fuentes, reportar enlaces caídos o solicitar mejoras.

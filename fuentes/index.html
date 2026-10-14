@@ -21,23 +21,36 @@
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:image" content="https://salmonidas.github.io/web-ayuda-electoral/og-image.png">
 
-  <!-- Structured Data: BreadcrumbList Schema -->
+  <!-- Structured Data: BreadcrumbList & CollectionPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://salmonidas.github.io/web-ayuda-electoral/"
+        "@type": "BreadcrumbList",
+        "@id": "https://salmonidas.github.io/web-ayuda-electoral/fuentes/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://salmonidas.github.io/web-ayuda-electoral/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Fuentes Oficiales",
+            "item": "https://salmonidas.github.io/web-ayuda-electoral/fuentes/"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Fuentes Oficiales",
-        "item": "https://salmonidas.github.io/web-ayuda-electoral/fuentes/"
+        "@type": "CollectionPage",
+        "@id": "https://salmonidas.github.io/web-ayuda-electoral/fuentes/#collection",
+        "url": "https://salmonidas.github.io/web-ayuda-electoral/fuentes/",
+        "name": "Directorio de Fuentes Oficiales | Fiscalizador Electoral España",
+        "description": "Catálogo interactivo con 22 fuentes oficiales, boletines del BOE, registros parlamentarios, subvenciones BDNS, Tribunal de Cuentas y agencias de verificación.",
+        "inLanguage": "es"
       }
     ]
   }
@@ -97,7 +110,7 @@
           </div>
 
           <div class="category-filters">
-            <button class="filter-btn active" data-category="all" type="button">Todas las fuentes (21)</button>
+            <button class="filter-btn active" data-category="all" type="button">Todas las fuentes (22)</button>
             <button class="filter-btn" data-category="oficial" type="button">Nivel 1: Evidencia Oficial</button>
             <button class="filter-btn" data-category="fact-checking" type="button">Nivel 2: Fact-Checkers Acreditados</button>
             <button class="filter-btn" data-category="observatorios" type="button">Nivel 3: Finanzas y Observatorios</button>

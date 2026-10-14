@@ -88,6 +88,17 @@ export const sourcesData = [
     tags: ["Subvenciones", "Sindicatos", "Patronal", "Hacienda", "Follow the Money"]
   },
   {
+    id: "tribunal-cuentas",
+    name: "Tribunal de Cuentas",
+    url: "https://www.tcu.es",
+    level: "Nivel 1",
+    levelCategory: "oficial",
+    levelName: "Evidencia Primaria Oficial",
+    description: "Órgano supremo fiscalizador de las cuentas y de la gestión económica del Estado, partidos políticos y campañas electorales.",
+    whyUseful: "Auditorías oficiales y vinculantes sobre donaciones, contabilidad de partidos y justificación de fondos de campañas electorales.",
+    tags: ["Partidos", "Fiscalización", "Campañas", "Financiación", "Follow the Money"]
+  },
+  {
     id: "maldita",
     name: "Maldita.es",
     url: "https://maldita.es",

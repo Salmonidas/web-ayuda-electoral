@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada (404) | Fiscalizador Electoral España</title>
+  
+  <meta name="description" content="La página que buscas no existe o ha sido movida. Accede al Fiscalizador Cívico con IA, tutoriales o directorio de fuentes oficiales.">
+  <meta name="robots" content="noindex, follow">
+
+  <script>
+    (function() {
+      const isGHPages = location.hostname.includes('github.io');
+      const base = isGHPages ? '/web-ayuda-electoral/' : '/';
+      document.write('<base href="' + base + '">');
+      
+      const storedTheme = localStorage.getItem('theme-preference');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = storedTheme || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', initialTheme);
+    })();
+  </script>
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="./" class="brand">
+        <div class="brand-icon">⚖️</div>
+        <span>Fiscalizador Electoral</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="./" class="nav-link">El Prompt</a></li>
+          <li><a href="tutorial/" class="nav-link">Tutoriales</a></li>
+          <li><a href="fuentes/" class="nav-link">Fuentes Oficiales</a></li>
+          <li><a href="comunidad/" class="nav-link">Comunidad</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a id="repo-link" href="https://github.com/Salmonidas/web-ayuda-electoral" target="_blank" rel="noopener noreferrer" class="btn-icon" title="Ver repositorio en GitHub" aria-label="Repositorio de GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </a>
+
+        <button id="theme-toggle" class="btn-icon" type="button" title="Cambiar tema claro/oscuro" aria-label="Cambiar tema">
+          <span id="theme-icon">☀️</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 404 Main Content -->
+  <main class="container" style="padding-top: 5rem; padding-bottom: 5rem; min-height: 65vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+    <div style="max-width: 680px; width: 100%;">
+      <span class="badge" style="font-size: 0.85rem; padding: 0.35rem 0.9rem; margin-bottom: 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+        <span>🔍</span> Error 404
+      </span>
+      
+      <h1 style="font-size: 2.2rem; font-weight: 800; letter-spacing: -0.03em; margin-bottom: 1rem; color: var(--text-primary);">
+        Página no encontrada
+      </h1>
+      
+      <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 2.5rem;">
+        La dirección a la que intentas acceder no existe, ha sido modificada o el enlace es incorrecto. Puedes regresar a la página principal o explorar las secciones del proyecto:
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; text-align: left; margin-bottom: 2.5rem;">
+        <a href="./" class="hero-feature-card" style="padding: 1.25rem; text-decoration: none; display: flex; flex-direction: column; gap: 0.35rem;">
+          <strong style="color: var(--text-primary); font-size: 1rem;">⚖️ El Prompt Oficial</strong>
+          <span style="color: var(--text-muted); font-size: 0.82rem;">Copia el prompt actualizado v1.0.2 para tu IA</span>
+        </a>
+
+        <a href="tutorial/" class="hero-feature-card" style="padding: 1.25rem; text-decoration: none; display: flex; flex-direction: column; gap: 0.35rem;">
+          <strong style="color: var(--text-primary); font-size: 1rem;">📖 Tutoriales de IA</strong>
+          <span style="color: var(--text-muted); font-size: 0.82rem;">Guías para Gemini, ChatGPT, Claude y Perplexity</span>
+        </a>
+
+        <a href="fuentes/" class="hero-feature-card" style="padding: 1.25rem; text-decoration: none; display: flex; flex-direction: column; gap: 0.35rem;">
+          <strong style="color: var(--text-primary); font-size: 1rem;">🗂️ Fuentes Oficiales</strong>
+          <span style="color: var(--text-muted); font-size: 0.82rem;">Catálogo clasificado con 22 registros y BOE</span>
+        </a>
+
+        <a href="comunidad/" class="hero-feature-card" style="padding: 1.25rem; text-decoration: none; display: flex; flex-direction: column; gap: 0.35rem;">
+          <strong style="color: var(--text-primary); font-size: 1rem;">👥 Gobernanza y Mejoras</strong>
+          <span style="color: var(--text-muted); font-size: 0.82rem;">Aporta nuevas fuentes en GitHub Issues</span>
+        </a>
+      </div>
+
+      <a href="./" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem; text-decoration: none;">
+        <span>← Volver al Inicio</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Fiscalizador Electoral España</h4>
+          <p>
+            Iniciativa cívica independiente para empoderar a la ciudadanía española en el uso riguroso y objetivo de la Inteligencia Artificial para el voto informado.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Navegación</h5>
+            <ul>
+              <li><a href="./">El Prompt</a></li>
+              <li><a href="tutorial/">Tutoriales IA</a></li>
+              <li><a href="fuentes/">Fuentes Oficiales</a></li>
+              <li><a href="comunidad/">Participar</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Código Abierto</h5>
+            <ul>
+              <li><a href="https://github.com/Salmonidas/web-ayuda-electoral" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a></li>
+              <li><a href="https://github.com/Salmonidas/web-ayuda-electoral/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          Desarrollado con compromiso cívico · Sin cookies de seguimiento · Software libre
+        </div>
+        <div>
+          Proyecto alojado en GitHub Pages
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

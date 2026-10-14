@@ -21,23 +21,36 @@
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:image" content="https://salmonidas.github.io/web-ayuda-electoral/og-image.png">
 
-  <!-- Structured Data: BreadcrumbList Schema -->
+  <!-- Structured Data: BreadcrumbList & AboutPage Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Inicio",
-        "item": "https://salmonidas.github.io/web-ayuda-electoral/"
+        "@type": "BreadcrumbList",
+        "@id": "https://salmonidas.github.io/web-ayuda-electoral/comunidad/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://salmonidas.github.io/web-ayuda-electoral/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Participar y Comunidad",
+            "item": "https://salmonidas.github.io/web-ayuda-electoral/comunidad/"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Participar y Comunidad",
-        "item": "https://salmonidas.github.io/web-ayuda-electoral/comunidad/"
+        "@type": "AboutPage",
+        "@id": "https://salmonidas.github.io/web-ayuda-electoral/comunidad/#about",
+        "url": "https://salmonidas.github.io/web-ayuda-electoral/comunidad/",
+        "name": "Participación Ciudadana y Gobernanza | Fiscalizador Electoral España",
+        "description": "Guía de colaboración cívica para proponer nuevas fuentes oficiales, auditar posibles sesgos en el prompt y colaborar vía GitHub Issues.",
+        "inLanguage": "es"
       }
     ]
   }

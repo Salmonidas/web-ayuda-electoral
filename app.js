@@ -95,7 +95,10 @@ function renderPromptViewer() {
   }
   const versionBadge = document.getElementById('prompt-version-badge');
   if (versionBadge) {
-    versionBadge.textContent = `v${promptMetadata.version} (${promptMetadata.lastUpdated})`;
+    const displayDate = /^\d{4}-\d{2}-\d{2}$/.test(promptMetadata.lastUpdated)
+      ? promptMetadata.lastUpdated.split('-').reverse().join('/')
+      : promptMetadata.lastUpdated;
+    versionBadge.textContent = `v${promptMetadata.version} (${displayDate})`;
   }
 }
 
@@ -388,6 +391,18 @@ function initPromptComparator() {
         title: 'Sistema de Veredictos Visuales (6 Veredictos)',
         desc: 'Clasificación cromática estricta (🟢 Cumplido, 🔵 No atribuible, 🟡 Parcial, 🟠 No demostrado, 🔴 Falso/Bulo, ⚪ Sin datos).',
         test: () => searchUser.includes('cumplido') && searchUser.includes('bulo') && (rawUser.includes('🟢') || searchUser.includes('veredicto'))
+      },
+      {
+        id: 'multimodal',
+        title: 'Protocolo de Auditoría Multimodal (Vídeo, Audio y Virales)',
+        desc: 'Reglas contra falso peritaje acústico, controversia acústica en ruido de fondo y prevención de deepfakes y cheapfakes.',
+        test: () => searchUser.includes('multimodal') || searchUser.includes('peritaje ac') || searchUser.includes('controversia ac')
+      },
+      {
+        id: 'jurisdiccional',
+        title: 'Extensión Jurisdiccional y Territorial Obligatoria',
+        desc: 'Obligación de rastrear boletines autonómicos/forales y prensa regional de referencia ante controversias territoriales.',
+        test: () => searchUser.includes('extensi') && (searchUser.includes('jurisdiccional') || searchUser.includes('territorial'))
       }
     ];
 
