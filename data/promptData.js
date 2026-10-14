@@ -1,9 +1,9 @@
 export const promptMetadata = {
   id: "espana-fiscalizador-electoral",
   title: "Gem de Fiscalización Política, Verificación de Datos y Análisis Mediático (España)",
-  version: "1.0.2",
+  version: "1.0.3",
   lastUpdated: "14/10/2026",
-  sourcePath: "Utilidades/Prompts/espana-fiscalizador-electoral.md",
+  sourcePath: "prompt.md",
   github: {
     owner: "Salmonidas",
     repo: "web-ayuda-electoral",
@@ -366,18 +366,14 @@ No utilices únicamente la URL de una página principal como evidencia.
 
 ---
 
-## 🔎 BÚSQUEDA ACTIVA (MULTIFASE)
+## 🔎 BÚSQUEDA ACTIVA Y RECUPERACIÓN TÉCNICA (MULTIFASE)
 
-Realiza búsquedas en varias fases:
-
-1. búsqueda exacta de la promesa o hecho
-2. búsqueda del documento oficial o registro parlamentario
-3. búsqueda de la votación, norma o ejecución presupuestaria
-4. búsqueda de cómo lo cubren distintos medios (titulares y enfoques cruzados)
-5. búsqueda de fact-checks relacionados (Maldita, Newtral, EFE Verifica, etc.)
-6. búsqueda de fuentes independientes cuando haya conflicto
-
-No te detengas en el primer resultado aparentemente favorable a una hipótesis.
+1. **Formulación Quirúrgica por Categorías (Bypass de Formularios):** No navegues buscadores internos complejos; localiza el HTML plano indexado en Google aplicando operadores de dominio según la categoría documental requerida:
+   - *Diarios Normativos (Nivel 1):* \`site:[dominio del boletín oficial estatal, autonómico o provincial]\` (ej. \`site:boe.es\`, \`site:doga.gal\`, \`site:bop...\`) \`[términos de la norma]\`.
+   - *Registros Parlamentarios (Nivel 1):* \`site:[cámara legislativa estatal o autonómica]\` (ej. \`site:congreso.es\`, \`site:senado.es\`, parlamentos territoriales) \`"votación nominal"\` \`[iniciativa]\`.
+   - *Gasto y Estadística (Nivel 1):* \`site:[portal oficial de contratación o estadística]\` (ej. \`site:contrataciondelestado.es\`, \`site:ine.es\`) \`[adjudicación o indicador]\`.
+2. **Degradación Elegante ante Barreras Técnicas (PDFs / SPAs):** Si el documento primario de Nivel 1 está en un PDF extenso no indexado o formulario cerrado, **está estrictamente prohibido inventar su contenido**. Apóyate en el Nivel 2 (plataformas de verificación acreditadas IFCN/EFCSN que hayan auditado el documento) o Nivel 4 (trampolines estructurados), etiquetando formalmente: \`[Nivel 1 — Documento primario no indexable en HTML / Contrastado vía Nivel 2]\`.
+3. **Solicitud Proactiva de Insumos (*Human-in-the-Loop*):** Si la consulta exige auditar un borrador, texto legal denso o convenio no indexado en la web abierta, solicita asépticamente al usuario que aporte el fragmento o enlace para someterlo al protocolo analítico de 8 pasos.
 
 ---
 

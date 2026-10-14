@@ -2,14 +2,16 @@
 
 > Prompt de sistema, directrices y catálogo de fuentes oficiales para auditar compromisos electorales, votaciones nominales parlamentarias, convenios laborales (REGCON) y subvenciones públicas (BDNS) con cualquier modelo de Inteligencia Artificial.
 
-El Fiscalizador Cívico es una iniciativa comunitaria, independiente y de código abierto (licencia MIT) diseñada para dotar a la ciudadanía española de una metodología rigurosa para auditar la vida pública mediante Inteligencia Artificial (Gemini, ChatGPT, Claude, Perplexity y modelos locales).
+El Fiscalizador Cívico es una iniciativa comunitaria, independiente y de código abierto (licencia MIT) diseñada para dotar a la ciudadanía española de una metodología rigurosa para auditar la vida pública mediante Inteligencia Artificial (Gemini, ChatGPT, Claude, Perplexity y modelos locales como Ollama).
 
 El sistema opera bajo un protocolo estricto de jerarquía probatoria (6 niveles), neutralidad aséptica, trazabilidad obligatoria con hipervínculos a registros oficiales y el principio de "Follow The Money" (contraste de declaraciones políticas con partidas presupuestarias reales y convenios colectivos).
 
 ## Documentación y Enlaces Clave
 
-- [El Prompt Oficial (Inicio)](https://salmonidas.github.io/web-ayuda-electoral/): Vista principal con el prompt completo v1.0.2 listo para copiar, características técnicas y preguntas frecuentes.
-- [Directorio de Fuentes y Evidencias](https://salmonidas.github.io/web-ayuda-electoral/fuentes/): Catálogo de 22 fuentes clasificadas en 6 niveles (BOE, Registros Parlamentarios, BDNS, Contratación del Estado, REGCON, Fact-Checkers IFCN/EFCSN).
+- [Prompt Oficial en Markdown Puro (prompt.md)](https://salmonidas.github.io/web-ayuda-electoral/prompt.md): El archivo Markdown limpio sin maquetación con las directivas completas, veredictos y protocolo oficial v1.0.2.
+- [Corpus Completo (llms-full.txt)](https://salmonidas.github.io/web-ayuda-electoral/llms-full.txt): Documento único consolidado con el prompt completo, las 22 fuentes oficiales explicadas y preguntas frecuentes para ingesta directa de contexto en una sola petición.
+- [El Prompt Oficial en la Web](https://salmonidas.github.io/web-ayuda-electoral/): Vista principal con visor interactivo del prompt, comparador de versiones y dudas ciudadanas.
+- [Directorio de Fuentes y Evidencias](https://salmonidas.github.io/web-ayuda-electoral/fuentes/): Catálogo interactivo de 22 fuentes clasificadas en 6 niveles (BOE, Registros Parlamentarios, BDNS, Contratación del Estado, REGCON, Fact-Checkers IFCN/EFCSN).
 - [Tutoriales de Configuración IA](https://salmonidas.github.io/web-ayuda-electoral/tutorial/): Guías paso a paso para configurar el fiscalizador en Gemini Gems, instrucciones personalizadas de ChatGPT, proyectos de Claude, Perplexity y modelos locales.
 - [Gobernanza y Participación Cívica](https://salmonidas.github.io/web-ayuda-electoral/comunidad/): Normas para sugerir nuevas fuentes primarias, auditar posibles sesgos ideológicos y contribuir vía GitHub Issues.
 
