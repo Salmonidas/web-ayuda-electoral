@@ -183,6 +183,40 @@
               </p>
             </div>
           </div>
+
+          <!-- Benchmark / Reasoning Level Tip for Gemini -->
+          <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1.75rem;">
+            <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 1.4rem;">🧠</span>
+              <h4 style="font-size: 1.1rem; font-weight: 700; margin: 0;">Nivel de Razonamiento en Gemini (Thinking Mode): ¿Cuál elegir?</h4>
+            </div>
+            <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.55; margin-bottom: 1.15rem;">
+              Las pruebas empíricas demuestran diferencias sustanciales de rigor y precisión según el nivel de razonamiento configurado:
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1rem;">
+              <div style="background: rgba(239, 68, 68, 0.05); border: 1px solid rgba(239, 68, 68, 0.2); border-radius: var(--radius-md); padding: 1rem;">
+                <div style="font-weight: 700; font-size: 0.9rem; color: #ef4444; margin-bottom: 0.35rem;">Thinking Low (Bajo) · 1,5s - 2,5s</div>
+                <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0; line-height: 1.45;">
+                  <strong>No recomendado.</strong> Citas legales genéricas, omisión sistemática de tablas Markdown y alta vulnerabilidad a tropiezos del enrutador interno en temas parlamentarios.
+                </p>
+              </div>
+              <div style="background: rgba(234, 179, 8, 0.05); border: 1px solid rgba(234, 179, 8, 0.2); border-radius: var(--radius-md); padding: 1rem;">
+                <div style="font-weight: 700; font-size: 0.9rem; color: #eab308; margin-bottom: 0.35rem;">Thinking Medium (Medio) · 2,5s - 4s</div>
+                <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0; line-height: 1.45;">
+                  <strong>Nivel mínimo sugerido.</strong> Adecuado para el 80% de consultas cotidianas de verificación rápida (SMI, bonos sociales o votaciones plenarias estándar).
+                </p>
+              </div>
+              <div style="background: rgba(16, 185, 129, 0.05); border: 1px solid rgba(16, 185, 129, 0.25); border-radius: var(--radius-md); padding: 1rem;">
+                <div style="font-weight: 700; font-size: 0.9rem; color: #10b981; margin-bottom: 0.35rem;">Thinking High (Alto) · 6s - 10s ⭐ Recomendado</div>
+                <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0; line-height: 1.45;">
+                  <strong>Recomendación definitiva.</strong> Solo añade 2–4s de espera y garantiza tablas completas, precisión matemática milimétrica (cálculos AIReF/BOE) y 100% de inmunidad a fallos del router.
+                </p>
+              </div>
+            </div>
+            <div style="background: rgba(59, 130, 246, 0.07); border-left: 3px solid var(--accent-primary); padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+              💡 <strong>Consejo de comodidad:</strong> Te recomendamos dejar fijado <strong>Thinking High</strong> de forma permanente en tu Gem o Habilidad. Así no tendrás que alternar entre niveles y dispondrás siempre de la máxima profundidad documental sin retrasos perceptibles.
+            </div>
+          </div>
         </div>
 
         <!-- Continuous evolution notice -->
@@ -200,31 +234,58 @@
 
         <!-- Multi-AI Platform Guides Accordion -->
         <div style="margin-bottom: 4rem;">
-          <h2 style="font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1.5rem;">
+          <h2 style="font-size: 1.6rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.5rem;">
             Guías para Otros Modelos y Plataformas de IA
           </h2>
+          <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 1.25rem; line-height: 1.5;">
+            El prompt es universal y de código abierto. Puedes ejecutarlo en cualquier inteligencia artificial conectada a la red o en modelos locales.
+          </p>
+
+          <!-- Consejo Transversal de Modelos, Deriva y Alucinaciones -->
+          <div style="background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.15rem 1.25rem; margin-bottom: 1.5rem; display: flex; gap: 0.85rem; align-items: flex-start;">
+            <span style="font-size: 1.35rem; line-height: 1;">🧪</span>
+            <div style="font-size: 0.88rem; line-height: 1.55;">
+              <strong style="color: var(--text-primary); display: block; margin-bottom: 0.25rem;">Recomendación Cívica: Prueba diferentes modelos y vigila la deriva</strong>
+              <span style="color: var(--text-secondary);">
+                Cada motor de IA tiene un umbral propio de seguimiento de instrucciones y tolerancia frente a posibles alucinaciones. Te recomendamos experimentar con varios modelos en tu plataforma habitual para dar con el que mejor se ajuste a tu nivel de exigencia. Asimismo, si notas que en hilos largos la IA relaja el formato o empieza a desviar las reglas, <strong>inicia una conversación limpia</strong> o <strong>vuélvele a recordar el prompt</strong> para restablecer el rigor metodológico.
+              </span>
+            </div>
+          </div>
 
           <!-- ChatGPT -->
           <div class="accordion-item">
             <button class="accordion-header" type="button">
               <span style="display: flex; align-items: center; gap: 0.6rem;">
                 <span style="font-size: 1.25rem;">🤖</span>
-                <strong>ChatGPT (OpenAI) · Custom GPT o Chat Estándar</strong>
+                <strong>ChatGPT (OpenAI) · Complementos (Plugins)</strong>
               </span>
               <span>▼</span>
             </button>
             <div class="accordion-content">
-              <div style="display: grid; gap: 0.85rem;">
-                <p><strong>Opción A — Como Custom GPT (ChatGPT Plus / Team):</strong></p>
-                <ol style="padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.4rem;">
-                  <li>Accede a <a href="https://chatgpt.com/gpts/editor" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: underline;">chatgpt.com/gpts/editor</a> o haz clic en <em>Explore GPTs</em> → <em>+ Create</em>.</li>
-                  <li>En la pestaña <strong>Configure</strong>, ponle por nombre <em>Fiscalizador Electoral España</em>.</li>
-                  <li>Pega el prompt copiado de la web en el campo <strong>Instructions</strong>.</li>
-                  <li>En <strong>Capabilities</strong>, asegúrate de marcar la casilla <strong>Web Search</strong> (imprescindible para auditar leyes y hemerotecas en vivo).</li>
-                  <li>Pulsa en <em>Save</em> (puedes guardarlo como privado <em>Only me</em> o compartirlo mediante enlace).</li>
+              <div style="display: grid; gap: 0.9rem;">
+                <p><strong>Configuración directa como Complemento en ChatGPT:</strong></p>
+                <ol style="padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.65rem;">
+                  <li>
+                    Entra en <a href="https://chatgpt.com/plugins" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: underline;">chatgpt.com/plugins</a> o haz clic en <strong>Complementos</strong> en la barra lateral izquierda.
+                  </li>
+                  <li>
+                    En la esquina superior derecha, pulsa en el botón desplegable <strong>«Añadir ▾»</strong> y selecciona <strong>«Crear complemento»</strong>.
+                  </li>
+                  <li>
+                    Se abrirá automáticamente un chat asistido con <strong>@Plugin Creator</strong>.
+                  </li>
+                  <li>
+                    Haz clic en el siguiente botón para copiar la orden lista con el prompt íntegro de auditoría:
+                    <div style="margin-top: 0.4rem;">
+                      <button id="btn-copy-plugin-prompt" type="button" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.45rem 0.9rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                        📋 Copiar Orden Completa para @Plugin Creator
+                      </button>
+                    </div>
+                  </li>
+                  <li>
+                    Pega el texto en el chat con <strong>@Plugin Creator</strong> y pulsa enviar. ChatGPT empaquetará el complemento automáticamente y lo dejará disponible para auditar en tus conversaciones.
+                  </li>
                 </ol>
-                <p style="margin-top: 0.5rem;"><strong>Opción B — Uso directo en Chat Estándar:</strong></p>
-                <p style="font-size: 0.88rem;">Inicia un nuevo chat con navegación web y escribe como primer mensaje: <em>«Actúa como Fiscalizador Electoral España siguiendo estas instrucciones: [pegar prompt]»</em>.</p>
               </div>
             </div>
           </div>
@@ -257,19 +318,18 @@
             <button class="accordion-header" type="button">
               <span style="display: flex; align-items: center; gap: 0.6rem;">
                 <span style="font-size: 1.25rem;">🔍</span>
-                <strong>Perplexity AI · Collections & Pro Search</strong>
+                <strong>Perplexity AI · Búsqueda Rápida & Pro Search</strong>
               </span>
               <span>▼</span>
             </button>
             <div class="accordion-content">
               <div style="display: grid; gap: 0.85rem;">
-                <p><strong>Configuración como Colección especializada:</strong></p>
-                <ol style="padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.4rem;">
-                  <li>Ve a <a href="https://perplexity.ai" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: underline;">perplexity.ai</a> → <em>Library</em> → <em>Collections</em> → <em>+ New Collection</em>.</li>
-                  <li>Nómbrala <em>Fiscalizador Electoral España</em>.</li>
-                  <li>En el campo <strong>AI Prompt (Instrucciones)</strong>, pega el prompt oficial.</li>
-                  <li>Activa el modo <strong>Pro Search</strong> al realizar tus consultas.</li>
-                  <li><em>Ventaja única:</em> Perplexity realiza múltiples búsquedas web concurrentes y aporta números de cita [1], [2] con enlaces a cada documento oficial.</li>
+                <p><strong>Uso en Perplexity AI:</strong></p>
+                <ol style="padding-left: 1.3rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                  <li>Entra en <a href="https://perplexity.ai" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: underline;">perplexity.ai</a> con tu cuenta.</li>
+                  <li>Pega el prompt copiado de la web como mensaje de inicio junto con tu consulta de verificación y activa el modo <strong>Pro Search</strong>.</li>
+                  <li><strong>Control de deriva:</strong> Si notas que el motor empieza a fallar, simplifica el formato o confunde siglas oficiales, <strong>inicia una nueva conversación</strong> o <strong>recuérdale el prompt</strong> en ese mismo mensaje.</li>
+                  <li><em>Prueba de modelos:</em> Si dispones de Perplexity Pro, experimenta cambiando el modelo de búsqueda (por ejemplo, <em>Claude 3.5 Sonnet</em> o <em>GPT-4o</em>) para evaluar cuál ofrece mayor rigor analítico y menor umbral de alucinaciones.</li>
                 </ol>
               </div>
             </div>

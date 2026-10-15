@@ -240,11 +240,19 @@ function initCopyActions() {
   const heroCopyBtn = document.getElementById('hero-copy-prompt');
 
   const handleCopy = () => {
-    copyToClipboard(rawElectoralPrompt, '¡Prompt copiado al portapapeles! Listo para pegar en Gemini o ChatGPT.');
+    copyToClipboard(rawElectoralPrompt, '¡Prompt copiado al portapapeles! Listo para usar en tu IA.');
   };
 
   if (mainCopyBtn) mainCopyBtn.addEventListener('click', handleCopy);
   if (heroCopyBtn) heroCopyBtn.addEventListener('click', handleCopy);
+
+  const pluginPromptBtn = document.getElementById('btn-copy-plugin-prompt');
+  if (pluginPromptBtn) {
+    pluginPromptBtn.addEventListener('click', () => {
+      const fullText = `@Plugin Creator, ayúdame a crear un complemento con el siguiente prompt:\n\n${rawElectoralPrompt}`;
+      copyToClipboard(fullText, '¡Orden y prompt copiados! Pégalos directamente en el chat con @Plugin Creator.');
+    });
+  }
 }
 
 function initGitHubLinks() {

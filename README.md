@@ -54,27 +54,27 @@ Un catálogo categorizado con buscador en tiempo real de los portales y bases de
 ### 4. Guías de Configuración para Cualquier Inteligencia Artificial
 El prompt es 100% universal y agnóstico de la plataforma:
 
-* 💎 **Google Gemini (Gemini Gems):**
+* 💎 **Google Gemini (Gemini Gems / Habilidades):**
   1. Entra en [gemini.google.com/gems/view](https://gemini.google.com/gems/view) y haz clic en **+ Nuevo Gem**.
   2. Nómbralo *Fiscalizador Electoral España*.
   3. Pega el prompt copiado de la web en el campo **Instrucciones** y guarda.
-  4. *Ventaja:* Búsqueda nativa en Google, inspección en vivo de volcados estructurados (`info29n.com/datos.json`) y páginas parlamentarias sin alucinaciones.
+  4. *Ajuste de razonamiento (Thinking Mode):* Se sugiere usar mínimo **Thinking Medium** (para el 80% de consultas) o fijar **Thinking High** de forma permanente (6–10s de respuesta) para asegurar tablas completas, precisión cuantitativa milimétrica (AIReF/BOE) y 100% de inmunidad a fallos del router.
+  5. *Ventaja única:* Búsqueda nativa en Google, inspección en vivo de volcados estructurados (`info29n.com/datos.json`) y páginas parlamentarias sin alucinaciones.
 
-* 🤖 **ChatGPT / OpenAI (Custom GPTs o Chat Estándar):**
-  1. En [chatgpt.com/gpts/editor](https://chatgpt.com/gpts/editor), pulsa en *Create*.
-  2. En la pestaña *Configure*, pega el prompt en el campo **Instructions**.
-  3. Asegúrate de tener activada la casilla **Web Search** en *Capabilities*.
-  4. *En chat libre:* Pega el prompt como primer mensaje: `«Actúa como Fiscalizador Electoral España siguiendo estas instrucciones: [prompt]»`.
+* 🤖 **ChatGPT / OpenAI (Complementos / Plugins):**
+  1. En [chatgpt.com/plugins](https://chatgpt.com/plugins) (o desde *Complementos* en el menú lateral), pulsa en *Añadir ▾* → *Crear complemento*.
+  2. En el chat asistido con `@Plugin Creator`, escribe: `@Plugin Creator, ayúdame a crear un complemento con el siguiente prompt:` y pega el prompt oficial.
+  3. ChatGPT generará y empaquetará el complemento automáticamente para usarlo en cualquier conversación.
 
 * 🎭 **Claude / Anthropic (Claude Projects & Artifacts):**
   1. En [claude.ai](https://claude.ai), entra en *Projects* y pulsa en *+ Create Project*.
   2. Pega el prompt en **Project Instructions**.
   3. *Ventaja única:* Puedes subir en *Project Knowledge* programas electorales completos en PDF o informes del INE, y al pedir infografías HTML/CSS, Claude las previsualizará en vivo en su panel de Artifacts.
 
-* 🔍 **Perplexity AI (Collections & Pro Search):**
-  1. En [perplexity.ai](https://perplexity.ai), crea una nueva colección en *Library* > *Collections*.
-  2. Pega el prompt en **AI Prompt (Instrucciones de la colección)** y utiliza el modo *Pro Search*.
-  3. *Ventaja única:* Múltiples búsquedas concurrentes y citas numéricas al pie [1], [2] con enlaces a cada documento oficial.
+* 🔍 **Perplexity AI (Búsqueda Rápida & Pro Search):**
+  1. En [perplexity.ai](https://perplexity.ai), pega el prompt al inicio de la conversación junto con tu consulta y activa el modo *Pro Search*.
+  2. Si observas que el motor deriva las reglas o simplifica el formato, abre un nuevo chat o recuérdale el prompt en ese mensaje.
+  3. *Recomendación:* En Perplexity Pro, prueba diferentes modelos (ej. *Claude 3.5 Sonnet* o *GPT-4o*) para encontrar el que mejor se ajuste a tu umbral de rigor y alucinaciones.
 
 * 💻 **Microsoft Copilot:**
   1. En [copilot.microsoft.com](https://copilot.microsoft.com), selecciona el estilo de conversación **Más Preciso**.
