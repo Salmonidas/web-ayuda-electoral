@@ -411,6 +411,12 @@ function initPromptComparator() {
         title: 'Extensión Jurisdiccional y Territorial Obligatoria',
         desc: 'Obligación de rastrear boletines autonómicos/forales y prensa regional de referencia ante controversias territoriales.',
         test: () => searchUser.includes('extensi') && (searchUser.includes('jurisdiccional') || searchUser.includes('territorial'))
+      },
+      {
+        id: 'coaccion_indirecta',
+        title: 'Coacción Indirecta, Asfixia Financiera y Efecto Desaliento',
+        desc: 'Fiscalización de asfixia económica con dinero público, discrecionalidad en subvenciones (arts. 9.3 y 14 CE) y distinción entre censura formal y material desde el Turno 1.',
+        test: () => searchUser.includes('coacci') || searchUser.includes('efecto desaliento') || searchUser.includes('chilling effect') || searchUser.includes('asfixia financiera')
       }
     ];
 
