@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Directorio de Fuentes Oficiales | Fiscalizador Electoral España</title>
+  <title>Fuentes Oficiales y Radares Cívicos: Congreso, BOE e Info29N</title>
   
-  <meta name="description" content="Directorio clasificado de fuentes primarias, boletines oficiales (BOE), fact-checkers acreditados y radares parlamentarios consultados por el Fiscalizador Electoral.">
+  <meta name="description" content="Directorio verificado para consultar con IA: El Congreso en tu mano, Info29N, Civio, BOE y registros parlamentarios. Qué aporta cada fuente y cómo preguntarla.">
   <meta name="robots" content="index, follow">
 
   <!-- Canonical & Favicon -->
@@ -18,11 +18,18 @@
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fiscalizador Cívico con IA">
+  <meta property="og:locale" content="es_ES">
   <meta property="og:url" content="https://salmonidas.github.io/web-ayuda-electoral/fuentes/">
-  <meta property="og:title" content="Directorio de Fuentes Oficiales | Fiscalizador Cívico con IA">
-  <meta property="og:description" content="Catálogo clasificado de fuentes oficiales, BOE, REGCON laboral, subvenciones BDNS y agencias de verificación.">
+  <meta property="og:title" content="Fuentes Oficiales y Radares Cívicos: Congreso, BOE e Info29N">
+  <meta property="og:description" content="Directorio verificado de 22 fuentes para consultar con IA: votaciones del Congreso, propuestas electorales, BOE, subvenciones y fact-checking.">
   <meta property="og:image" content="https://salmonidas.github.io/web-ayuda-electoral/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Fiscalizador Cívico con IA - Directorio de fuentes oficiales y radares cívicos">
   <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Fuentes Oficiales y Radares Cívicos: Congreso, BOE e Info29N">
+  <meta property="twitter:description" content="Directorio verificado de 22 fuentes para consultar con IA: votaciones del Congreso, propuestas electorales, BOE, subvenciones y fact-checking.">
   <meta property="twitter:image" content="https://salmonidas.github.io/web-ayuda-electoral/og-image.png">
 
   <!-- Structured Data: BreadcrumbList & CollectionPage Schema -->
@@ -52,8 +59,8 @@
         "@type": "CollectionPage",
         "@id": "https://salmonidas.github.io/web-ayuda-electoral/fuentes/#collection",
         "url": "https://salmonidas.github.io/web-ayuda-electoral/fuentes/",
-        "name": "Directorio de Fuentes Oficiales | Fiscalizador Electoral España",
-        "description": "Catálogo interactivo con 22 fuentes oficiales, boletines del BOE, registros parlamentarios, subvenciones BDNS, Tribunal de Cuentas y agencias de verificación.",
+        "name": "Fuentes Oficiales y Radares Cívicos: Congreso, BOE e Info29N",
+        "description": "Catálogo interactivo con 22 fuentes oficiales, boletines del BOE, registros parlamentarios, subvenciones BDNS, Tribunal de Cuentas, radares de votaciones y agencias de verificación.",
         "inLanguage": "es"
       }
     ]
@@ -100,10 +107,28 @@
       <div class="container">
         <div class="section-header" style="max-width: 50rem;">
           <span class="section-tag">Directorio Verificado</span>
-          <h1 class="section-title">Fuentes Útiles y Trampolines Cívicos</h1>
+          <h1 class="section-title">Fuentes Oficiales y Radares Cívicos para consultar con IA</h1>
           <p class="section-desc">
             Las bases de datos, boletines oficiales, verificadores y radares parlamentarios que el propio prompt consulta para certificar la verdad material frente al ruido partidista.
           </p>
+        </div>
+
+        <!-- Banner explicativo: convierte el directorio en utilidad real y no en una página puerta -->
+        <div style="margin-bottom: 2.5rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-left: 4px solid var(--accent-primary); border-radius: var(--radius-xl); padding: 2rem 2.25rem;">
+          <h2 style="font-size: 1.28rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.85rem; color: var(--text-primary);">
+            ¿Cómo consultar estas fuentes con Inteligencia Artificial?
+          </h2>
+          <p style="color: var(--text-secondary); font-size: 0.96rem; line-height: 1.65; margin-bottom: 0.9rem;">
+            No hace falta bucear a mano entre actas, tablas y PDF: este directorio es la materia prima que consume el protocolo de tu IA. Con el prompt activo en tu asistente habitual puedes preguntar en lenguaje natural y obtener la respuesta con enlaces a la fuente original.
+          </p>
+          <ul style="color: var(--text-secondary); font-size: 0.94rem; line-height: 1.75; margin: 0 0 1.25rem 1.15rem; padding: 0;">
+            <li>«¿Qué votó cada grupo parlamentario en la última ley de vivienda?»</li>
+            <li>«¿Qué propone cada candidatura sobre pensiones y qué votó antes al respecto?»</li>
+            <li>«¿Qué subvenciones públicas ha recibido esta entidad en los últimos cuatro años?»</li>
+          </ul>
+          <a href="../tutorial/" class="btn btn-primary" style="font-size: 0.92rem;">
+            💬 Ver cómo configurar tu IA en 1 minuto →
+          </a>
         </div>
 
         <!-- Search & Filter Controls -->
@@ -124,7 +149,423 @@
         </div>
 
         <!-- Sources Dynamic Grid -->
-        <div id="sources-grid" class="sources-grid"></div>
+        <!-- Pre-renderizado estático de las 22 fuentes: indexable sin JavaScript (Googlebot, scrapers de IA y previsualizaciones sociales). app.js lo reutiliza como mejora progresiva. -->
+        <div id="sources-grid" class="sources-grid">
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 1 · Evidencia Primaria Oficial</span>
+            <h3 class="source-title">Boletín Oficial del Estado (BOE)</h3>
+            <p class="source-desc">Publicación oficial del Estado donde se promulgan leyes, reales decretos, nombramientos y resoluciones con validez jurídica vinculante.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Es la máxima autoridad normativa. Para cualquier afirmación legal, el texto del BOE es la única prueba jurídica definitiva frente a declaraciones políticas.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Leyes</span>
+              <span class="source-tag">#Normativa</span>
+              <span class="source-tag">#Presupuestos</span>
+              <span class="source-tag">#Estatal</span>
+            </div>
+          </div>
+          <a href="https://www.boe.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 1 · Evidencia Primaria Oficial</span>
+            <h3 class="source-title">Congreso de los Diputados</h3>
+            <p class="source-desc">Portal parlamentario oficial con diarios de sesiones, registros de iniciativas legislativas, enmiendas y votaciones nominales por diputado y grupo.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Permite auditar el sentido real de cada voto, abstención o enmienda presentada, separando el discurso mediático de la votación en acta.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Votaciones</span>
+              <span class="source-tag">#Diarios de Sesiones</span>
+              <span class="source-tag">#Diputados</span>
+              <span class="source-tag">#Leyes</span>
+            </div>
+          </div>
+          <a href="https://www.congreso.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 1 · Evidencia Primaria Oficial</span>
+            <h3 class="source-title">Senado de España</h3>
+            <p class="source-desc">Cámara alta de representación territorial. Registro oficial de tramitación de leyes, vetos parlamentarios e iniciativas autonómicas.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Imprescindible para rastrear el trámite completo de leyes antes de su publicación definitiva en el BOE.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Trámite</span>
+              <span class="source-tag">#Territorial</span>
+              <span class="source-tag">#Enmiendas</span>
+            </div>
+          </div>
+          <a href="https://www.senado.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 1 · Evidencia Primaria Oficial</span>
+            <h3 class="source-title">Instituto Nacional de Estadística (INE)</h3>
+            <p class="source-desc">Organismo oficial de estadísticas socioeconómicas, demografía, empleo (EPA), inflación (IPC), hipotecas y vivienda en España.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Permite verificar series históricas largas para neutralizar el 'cherry-picking' estadístico en debates electorales.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Estadísticas</span>
+              <span class="source-tag">#Empleo</span>
+              <span class="source-tag">#Inflación</span>
+              <span class="source-tag">#Demografía</span>
+            </div>
+          </div>
+          <a href="https://www.ine.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 1 · Evidencia Primaria Oficial</span>
+            <h3 class="source-title">Plataforma de Contratación del Sector Público</h3>
+            <p class="source-desc">Portal oficial donde se licitan y publican todos los contratos, suministros y obras de las administraciones públicas en España.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Permite aplicar la regla 'Follow the Money': comprobar si las promesas de infraestructuras o servicios tienen licitación y presupuesto real asignado.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Contratos</span>
+              <span class="source-tag">#Licitaciones</span>
+              <span class="source-tag">#Gasto Público</span>
+              <span class="source-tag">#Follow the Money</span>
+            </div>
+          </div>
+          <a href="https://contrataciondelestado.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 1 · Evidencia Primaria Oficial</span>
+            <h3 class="source-title">Junta Electoral Central (JEC)</h3>
+            <p class="source-desc">Órgano regulador de los procesos electorales en España. Publica resoluciones, programas oficiales depositados y censos.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Garantiza la legalidad de los comicios y resuelve reclamaciones sobre neutralidad institucional y candidaturas.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Elecciones</span>
+              <span class="source-tag">#Candidaturas</span>
+              <span class="source-tag">#Normativa Electoral</span>
+            </div>
+          </div>
+          <a href="https://www.juntaelectoralcentral.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 1 · Evidencia Primaria Oficial</span>
+            <h3 class="source-title">REGCON · Registro de Convenios Colectivos</h3>
+            <p class="source-desc">Registro oficial del Ministerio de Trabajo y Economía Social donde se inscriben y publican todos los convenios colectivos, acuerdos laborales y planes de igualdad en España.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Esencial para contrastar derechos laborales, tablas salariales vigentes y acuerdos sectoriales frente a rumores o declaraciones públicas.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Laboral</span>
+              <span class="source-tag">#Convenios</span>
+              <span class="source-tag">#Tablas Salariales</span>
+              <span class="source-tag">#Ministerio de Trabajo</span>
+            </div>
+          </div>
+          <a href="https://expedientes.mites.gob.es/regcon/" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 1 · Evidencia Primaria Oficial</span>
+            <h3 class="source-title">Base de Datos Nacional de Subvenciones (BDNS / SNPS)</h3>
+            <p class="source-desc">Sistema Nacional de Publicidad de Subvenciones gestionado por la Intervención General de la Administración del Estado (IGAE).</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Permite auditar con total transparencia qué dinero público exacto reciben partidos políticos, sindicatos, patronales, fundaciones y ONGs.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Subvenciones</span>
+              <span class="source-tag">#Sindicatos</span>
+              <span class="source-tag">#Patronal</span>
+              <span class="source-tag">#Hacienda</span>
+              <span class="source-tag">#Follow the Money</span>
+            </div>
+          </div>
+          <a href="https://www.infosubvenciones.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 1 · Evidencia Primaria Oficial</span>
+            <h3 class="source-title">Tribunal de Cuentas</h3>
+            <p class="source-desc">Órgano supremo fiscalizador de las cuentas y de la gestión económica del Estado, partidos políticos y campañas electorales.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Auditorías oficiales y vinculantes sobre donaciones, contabilidad de partidos y justificación de fondos de campañas electorales.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Partidos</span>
+              <span class="source-tag">#Fiscalización</span>
+              <span class="source-tag">#Campañas</span>
+              <span class="source-tag">#Financiación</span>
+              <span class="source-tag">#Follow the Money</span>
+            </div>
+          </div>
+          <a href="https://www.tcu.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 2 · Fact-Checking Acreditado</span>
+            <h3 class="source-title">Maldita.es</h3>
+            <p class="source-desc">Medio de verificación independiente y sin ánimo de lucro acreditado por la International Fact-Checking Network (IFCN) y EFCSN.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Auditoría ágil de bulos virales, declaraciones engañosas en mítines y desinformación electoral en redes sociales.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Fact-checking</span>
+              <span class="source-tag">#Bulos</span>
+              <span class="source-tag">#Maldito Dato</span>
+              <span class="source-tag">#IFCN</span>
+            </div>
+          </div>
+          <a href="https://maldita.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 2 · Fact-Checking Acreditado</span>
+            <h3 class="source-title">Newtral</h3>
+            <p class="source-desc">Startup de contenido periodístico especializada en verificación factual y transparencia de datos públicos, acreditada por IFCN.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Especialmente útil por su sección 'Zona de Veredicto' que contrasta datos citados en entrevistas políticas frente a estadísticas oficiales.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Fact-checking</span>
+              <span class="source-tag">#Veredictos</span>
+              <span class="source-tag">#Transparencia</span>
+              <span class="source-tag">#IFCN</span>
+            </div>
+          </div>
+          <a href="https://newtral.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 2 · Fact-Checking Acreditado</span>
+            <h3 class="source-title">EFE Verifica</h3>
+            <p class="source-desc">Servicio de verificación de la Agencia EFE, la principal agencia de noticias en español, miembro de la red europea EFCSN.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Desmentidos rigurosos de desinformación internacional, audios manipulados con IA y bulos de política exterior.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Agencia EFE</span>
+              <span class="source-tag">#Internacional</span>
+              <span class="source-tag">#EFCSN</span>
+            </div>
+          </div>
+          <a href="https://verifica.efe.com" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 2 · Fact-Checking Acreditado</span>
+            <h3 class="source-title">Verificat</h3>
+            <p class="source-desc">Primera plataforma de fact-checking de Cataluña, acreditada por IFCN y EFCSN. Verificación en catalán y castellano.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Imprescindible para auditar declaraciones sobre política autonómica catalana, competencias y financiación territorial.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Cataluña</span>
+              <span class="source-tag">#Autonómico</span>
+              <span class="source-tag">#IFCN</span>
+            </div>
+          </div>
+          <a href="https://www.verificat.cat" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 3 · Observatorios y Finanzas Públicas</span>
+            <h3 class="source-title">Fundación Civio</h3>
+            <p class="source-desc">Organización periodística independiente que vigila el poder con datos: indultos, contratos de emergencia, puertas giratorias y ayudas.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Pioneros en rastreo del BOE automatizado y fiscalización del dinero público sin filtros partidistas.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Transparencia</span>
+              <span class="source-tag">#Indultos</span>
+              <span class="source-tag">#Contratación</span>
+              <span class="source-tag">#Puertas Giratorias</span>
+            </div>
+          </div>
+          <a href="https://civio.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 3 · Observatorios y Finanzas Públicas</span>
+            <h3 class="source-title">Transparencia Internacional España</h3>
+            <p class="source-desc">Capítulo español de Transparency International. Evalúa índices de corrupción, transparencia en partidos y contrataciones públicas.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Aporta comparativas internacionales y métricas contrastadas de calidad institucional y prevención de la corrupción.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Corrupción</span>
+              <span class="source-tag">#Integridad</span>
+              <span class="source-tag">#Partidos</span>
+            </div>
+          </div>
+          <a href="https://transparencia.org.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 3 · Observatorios y Finanzas Públicas</span>
+            <h3 class="source-title">Consejo de Transparencia y Buen Gobierno</h3>
+            <p class="source-desc">Organismo público independiente que vela por el cumplimiento del derecho ciudadano de acceso a la información pública en España.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Permite consultar resoluciones que obligan al Gobierno y a ministerios a revelar datos previamente ocultos.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Acceso Información</span>
+              <span class="source-tag">#Resoluciones</span>
+              <span class="source-tag">#Gobernanza</span>
+            </div>
+          </div>
+          <a href="https://www.consejodetransparencia.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 3 · Observatorios y Finanzas Públicas</span>
+            <h3 class="source-title">Casos Aislados</h3>
+            <p class="source-desc">Base de datos ciudadana colaborativa de casos de corrupción política investigados judicialmente en España.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Mapa cronológico de tramas, piezas judiciales y estimaciones del dinero público presuntamente desviado (usar bajo regla de corroboración judicial).
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Corrupción</span>
+              <span class="source-tag">#Casos Judiciales</span>
+              <span class="source-tag">#Base de Datos</span>
+            </div>
+          </div>
+          <a href="https://casos-aislados.com" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 3 · Observatorios y Finanzas Públicas</span>
+            <h3 class="source-title">OpenSecrets</h3>
+            <p class="source-desc">Base de datos de rastreo de dinero, donaciones de campaña y grupos de lobby en la política internacional y EE.UU.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Útil para auditar influencias geopolíticas y financiación exterior en temas de defensa y acuerdos multilaterales.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Lobbies</span>
+              <span class="source-tag">#Financiación</span>
+              <span class="source-tag">#Internacional</span>
+            </div>
+          </div>
+          <a href="https://www.opensecrets.org" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 3 · Observatorios y Finanzas Públicas</span>
+            <h3 class="source-title">Poletika</h3>
+            <p class="source-desc">Observatorio ciudadano impulsado por diversas ONG que vigila los compromisos políticos en justicia social, sanidad, cooperación y clima.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Rastrea la evolución entre lo que los partidos prometen en campaña y lo que posteriormente votan en el Parlamento.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Justicia Social</span>
+              <span class="source-tag">#Seguimiento</span>
+              <span class="source-tag">#ONGs</span>
+            </div>
+          </div>
+          <a href="https://poletika.org" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 4 · Radares Parlamentarios y Electorales</span>
+            <h3 class="source-title">El Congreso en tu Mano</h3>
+            <p class="source-desc">Radar cívico interactivo que recopila y desglosa las votaciones nominales de leyes y decretos del Congreso (histórico 2011-2023) con test de afinidad.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Trampolín ideal para saber qué votó cada diputado o formación política, con enlaces directos a las iniciativas del Congreso.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Radar Parlamentario</span>
+              <span class="source-tag">#Votaciones</span>
+              <span class="source-tag">#Test Afinidad</span>
+              <span class="source-tag">#Leyes</span>
+            </div>
+          </div>
+          <a href="https://www.elcongresoentumano.es" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 4 · Radares Parlamentarios y Electorales</span>
+            <h3 class="source-title">29N · Qué propone cada partido</h3>
+            <p class="source-desc">Buscador temático de propuestas electorales por partidos. Cuenta con volcado estructurado directo en formato JSON.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Permite contrastar programas electorales por temas específicos (fiscalidad, pensiones, vivienda) de forma ágil.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Programas Electorales</span>
+              <span class="source-tag">#Propuestas</span>
+              <span class="source-tag">#Comparador</span>
+            </div>
+          </div>
+          <a href="https://info29n.com/#inicio" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        <article class="source-card">
+          <div class="source-card-top">
+            <span class="source-level-tag">Nivel 5 · Repositorios de Documentos Desclasificados</span>
+            <h3 class="source-title">Jmail.world (Archivos Desclasificados)</h3>
+            <p class="source-desc">Buscador de documentos y registros liberados por comisiones de investigación del Congreso y el Departamento de Justicia de EE. UU.</p>
+            <div class="source-utility">
+              <strong>Utilidad para la IA:</strong> Fuente secundaria específica para consultas sobre redes de influencia internacional basadas exclusivamente en desclasificaciones judiciales.
+            </div>
+            <div class="source-tags">
+              <span class="source-tag">#Desclasificados</span>
+              <span class="source-tag">#Judicial</span>
+              <span class="source-tag">#Casos Específicos</span>
+            </div>
+          </div>
+          <a href="https://jmail.world" target="_blank" rel="noopener noreferrer" class="source-link-btn">
+            Abrir fuente ↗
+          </a>
+        </article>
+        </div>
+
+        <!-- Salvaguarda ética y legal (art. 37 Ley de Marcas / independencia editorial) -->
+        <div style="margin-top: 2.5rem; padding: 1.35rem 1.5rem; background: var(--bg-elevated, var(--bg-surface)); border: 1px dashed var(--border-subtle); border-radius: var(--radius-lg, 12px); font-size: 0.82rem; line-height: 1.6; color: var(--text-muted);">
+          <p><strong>Aviso de independencia y atribución.</strong> Las herramientas cívicas (como El Congreso en tu mano o Info29N), los observatorios (como Civio) y los diarios normativos (BOE, INE, REGCON, BDNS) son plataformas independientes de acceso público. Este portal no mantiene relación orgánica, societaria ni de patrocinio con ninguna de ellas: no es su web oficial ni representa su criterio editorial. Los nombres y marcas se citan a título meramente referencial y descriptivo para identificar la fuente (art. 37 de la Ley 17/2001 de Marcas), y los hipervínculos se facilitan conforme al art. 17 de la LSSI-CE y a la doctrina del TJUE (asunto C-466/12 <em>Svensson</em>). Verifica siempre los datos en la fuente primaria del Estado antes de darlos por buenos.</p>
+        </div>
 
         <!-- Suggest New Source Banner -->
         <div style="margin-top: 3.5rem; background: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-xl); padding: 2.25rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">

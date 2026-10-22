@@ -8,11 +8,11 @@ El sistema opera bajo un protocolo estricto de jerarquía probatoria (6 niveles)
 
 ## Documentación y Enlaces Clave
 
-- [Prompt Oficial en Markdown Puro (prompt.md)](https://salmonidas.github.io/web-ayuda-electoral/prompt.md): El archivo Markdown limpio sin maquetación con las directivas completas, veredictos y protocolo oficial v1.0.2.
+- [Prompt Oficial en Markdown Puro (prompt.md)](https://salmonidas.github.io/web-ayuda-electoral/prompt.md): El archivo Markdown limpio sin maquetación con las directivas completas, veredictos y protocolo oficial v1.0.4 (20/10/2026).
 - [Corpus Completo (llms-full.txt)](https://salmonidas.github.io/web-ayuda-electoral/llms-full.txt): Documento único consolidado con el prompt completo, las 22 fuentes oficiales explicadas y preguntas frecuentes para ingesta directa de contexto en una sola petición.
 - [El Prompt Oficial en la Web](https://salmonidas.github.io/web-ayuda-electoral/): Vista principal con visor interactivo del prompt, comparador de versiones y dudas ciudadanas.
 - [Directorio de Fuentes y Evidencias](https://salmonidas.github.io/web-ayuda-electoral/fuentes/): Catálogo interactivo de 22 fuentes clasificadas en 6 niveles (BOE, Registros Parlamentarios, BDNS, Contratación del Estado, REGCON, Fact-Checkers IFCN/EFCSN).
-- [Tutoriales de Configuración IA](https://salmonidas.github.io/web-ayuda-electoral/tutorial/): Guías paso a paso para configurar el fiscalizador en Gemini Gems, instrucciones personalizadas de ChatGPT, proyectos de Claude, Perplexity y modelos locales.
+- [Auditar Votaciones del Congreso con IA: Tutorial Cívico](https://salmonidas.github.io/web-ayuda-electoral/tutorial/): Guía conversacional para preguntar a tu IA qué votó cada diputado y qué propone cada partido, con configuración paso a paso en Gemini Gems, complementos de ChatGPT, proyectos de Claude, Perplexity y modelos locales.
 - [Gobernanza y Participación Cívica](https://salmonidas.github.io/web-ayuda-electoral/comunidad/): Normas para sugerir nuevas fuentes primarias, auditar posibles sesgos ideológicos y contribuir vía GitHub Issues.
 
 ## Jerarquía de Evidencias (6 Niveles)

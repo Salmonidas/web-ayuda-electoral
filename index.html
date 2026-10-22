@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fiscalizador Cívico con IA | Elecciones 29N, Votaciones y Convenios</title>
+  <title>Fiscalizador Cívico con IA | Votaciones, 29N y Convenios</title>
   
-  <meta name="description" content="Audita las elecciones del 29N y la realidad ciudadana: consulta qué votó cada partido, contrasta programas electorales, convenios y subvenciones con tu IA.">
+  <meta name="description" content="Pregunta a tu IA qué votó cada partido en el Congreso, contrasta los programas del 29N, convenios y subvenciones con el BOE. Auditoría cívica y neutral.">
   <meta name="keywords" content="elecciones 29n, elecciones espana, voto informado, fiscalizador electoral, que voto cada partido, convenios colectivos regcon, subvenciones bdns, fact checking espana, transparencia congreso">
   <meta name="author" content="Comunidad Cívica Española">
   <meta name="robots" content="index, follow">
@@ -21,9 +21,11 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fiscalizador Cívico con IA">
+  <meta property="og:locale" content="es_ES">
   <meta property="og:url" content="https://salmonidas.github.io/web-ayuda-electoral/">
-  <meta property="og:title" content="Fiscalizador Cívico con IA | Elecciones 29N, Votaciones y Convenios">
-  <meta property="og:description" content="Audita las elecciones del 29N y la realidad ciudadana: consulta qué votó cada partido, contrasta programas electorales, convenios y subvenciones con tu IA.">
+  <meta property="og:title" content="Fiscalizador Cívico con IA | Votaciones, 29N y Convenios">
+  <meta property="og:description" content="Pregunta a tu IA qué votó cada partido en el Congreso, contrasta los programas del 29N, convenios y subvenciones con el BOE. Auditoría cívica y neutral.">
   <meta property="og:image" content="https://salmonidas.github.io/web-ayuda-electoral/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -31,8 +33,8 @@
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Fiscalizador Cívico con IA | Elecciones 29N, Votaciones y Convenios">
-  <meta property="twitter:description" content="Audita las elecciones del 29N y la realidad ciudadana: consulta qué votó cada partido, contrasta programas electorales, convenios y subvenciones con tu IA.">
+  <meta property="twitter:title" content="Fiscalizador Cívico con IA | Votaciones, 29N y Convenios">
+  <meta property="twitter:description" content="Pregunta a tu IA qué votó cada partido en el Congreso, contrasta los programas del 29N, convenios y subvenciones con el BOE. Auditoría cívica y neutral.">
   <meta property="twitter:image" content="https://salmonidas.github.io/web-ayuda-electoral/og-image.png">
 
   <!-- Structured Data: WebSite & FAQPage Schema -->
@@ -56,7 +58,7 @@
         "applicationCategory": "CivicTechnology",
         "operatingSystem": "All",
         "browserRequirements": "Requires JavaScript",
-        "softwareVersion": "1.0.2",
+        "softwareVersion": "1.0.4",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -65,7 +67,11 @@
         "publisher": {
           "@type": "Organization",
           "name": "Comunidad Cívica Española",
-          "url": "https://github.com/Salmonidas/web-ayuda-electoral"
+          "url": "https://github.com/Salmonidas/web-ayuda-electoral",
+          "sameAs": [
+            "https://github.com/Salmonidas/web-ayuda-electoral",
+            "https://github.com/Salmonidas"
+          ]
         }
       },
       {
@@ -110,6 +116,22 @@
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Es 100% gratuito y sin registros. Solo debes copiar el prompt de esta web y pegarlo en la ventana de chat de tu asistente de inteligencia artificial habitual. La conversación transcurre en tu propio chat y no recopilamos ningún dato."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo puedo usar la Inteligencia Artificial para consultar las votaciones del Congreso y el BOE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Copia el prompt de esta web y pégalo en tu asistente habitual, sin importar cuál sea. Después pregúntale en lenguaje natural qué votó cada diputado o grupo parlamentario en una ley concreta: el protocolo le obliga a consultar los registros parlamentarios, los diarios de sesiones y el BOE antes de responder, y a devolverte el sentido del voto con enlaces de verificación. En el directorio de fuentes tienes los enlaces directos a esos registros oficiales."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo contrastar las propuestas del 29N con el historial real de cada partido?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Al activar el fiscalizador, la IA extrae lo que promete cada candidatura y lo cruza con las votaciones históricas del Congreso y con las leyes publicadas en el BOE, señalando si la propuesta coincide o contradice lo que ese grupo ya votó. Así se distingue una promesa nueva de una promesa que ya se votó en contra."
             }
           }
         ]
@@ -191,7 +213,7 @@
         <div class="prompt-container">
           <div class="prompt-toolbar">
             <div class="prompt-meta">
-              <span id="prompt-version-badge" class="prompt-badge">v1.0.0</span>
+              <span id="prompt-version-badge" class="prompt-badge">v1.0.4 (20/10/2026)</span>
             </div>
 
             <div class="prompt-tabs">
@@ -696,7 +718,48 @@ La precisión y trazabilidad tienen prioridad sobre la velocidad, la cantidad de
 
           <!-- Steps View -->
           <div id="view-steps" class="prompt-content-view">
-            <div id="steps-container" class="steps-grid"></div>
+            <div id="steps-container" class="steps-grid">
+            <article class="step-card">
+              <div class="step-number">1</div>
+              <h4>Identificar la afirmación</h4>
+              <p>Reducir la pregunta a una proposición comprobable separando: quién, qué prometió, cuándo, plazo y condiciones.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">2</div>
+              <h4>Localizar la fuente original</h4>
+              <p>Buscar en programa electoral oficial, diario de sesiones del Parlamento o declaración grabada original.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">3</div>
+              <h4>Comprobar competencia legal</h4>
+              <p>Determinar qué nivel de administración (estatal, autonómica o local) tiene la competencia jurídica real.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">4</div>
+              <h4>Buscar evidencia de ejecución</h4>
+              <p>Verificar en el BOE, presupuestos, contratos en la Plataforma de Contratación o votaciones nominales.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">5</div>
+              <h4>Evaluar la realidad material</h4>
+              <p>¿Entró en vigor y produjo el efecto? No confundir aprobación en papel con aplicación en la calle.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">6</div>
+              <h4>Auditar encuadre mediático</h4>
+              <p>Contrastar cómo titulan medios de líneas contrarias, detectando omisiones intencionadas y cortinas de humo.</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">7</div>
+              <h4>Contrastar con fact-checkers</h4>
+              <p>Consultar desmentidos de verificadores independientes acreditados por IFCN/EFCSN (Maldita, Newtral, EFE).</p>
+            </article>
+            <article class="step-card">
+              <div class="step-number">8</div>
+              <h4>Emitir clasificación y veredicto</h4>
+              <p>Asignar veredicto visual fundamentado únicamente en evidencias y aportar enlaces directos a las fuentes.</p>
+            </article>
+          </div>
           </div>
 
           <!-- Compare View -->
@@ -732,13 +795,61 @@ La precisión y trazabilidad tienen prioridad sobre la velocidad, la cantidad de
           </div>
         </div>
 
+        <!-- Enlazado interno contextual (autoridad hacia /fuentes/ y /tutorial/) -->
+        <p style="margin-top: 1.5rem; text-align: center; color: var(--text-secondary); font-size: 0.92rem; line-height: 1.6;">
+          Explora las <a href="./fuentes/" style="color: var(--accent-primary); text-decoration: underline; font-weight: 600;">22 fuentes oficiales y radares parlamentarios</a> que consulta el prompt, o aprende a <a href="./tutorial/" style="color: var(--accent-primary); text-decoration: underline; font-weight: 600;">auditar votaciones del Congreso con tu IA paso a paso</a>.
+        </p>
+
         <!-- Verdicts Chips Bar -->
         <div class="verdicts-wrap" style="margin-top: 2rem;">
           <div class="verdicts-title">
             <span>🧭</span>
             <span>Sistema de Veredictos Visuales del Prompt:</span>
           </div>
-          <div id="verdicts-container" class="verdicts-grid"></div>
+          <div id="verdicts-container" class="verdicts-grid">
+            <div class="verdict-chip" style="border-left: 3px solid #10b981;">
+              <div class="verdict-header">
+                <span>🟢</span>
+                <span>Cumplido / Hecho Demostrado</span>
+              </div>
+              <div class="verdict-desc">Evidencia suficiente de ejecución real o hecho probado documentalmente.</div>
+            </div>
+            <div class="verdict-chip" style="border-left: 3px solid #3b82f6;">
+              <div class="verdict-header">
+                <span>🔵</span>
+                <span>No atribuible / Fuera de competencia</span>
+              </div>
+              <div class="verdict-desc">La institución no poseía capacidad legal o la evidencia es altamente sólida.</div>
+            </div>
+            <div class="verdict-chip" style="border-left: 3px solid #eab308;">
+              <div class="verdict-header">
+                <span>🟡</span>
+                <span>Parcial / En proceso / Disputado</span>
+              </div>
+              <div class="verdict-desc">Ejecución incompleta o interpretaciones divididas según el encuadre factual.</div>
+            </div>
+            <div class="verdict-chip" style="border-left: 3px solid #f97316;">
+              <div class="verdict-header">
+                <span>🟠</span>
+                <span>No demostrado / Especulación</span>
+              </div>
+              <div class="verdict-desc">Afirmación realizada sin respaldo probatorio documental ni presupuesto.</div>
+            </div>
+            <div class="verdict-chip" style="border-left: 3px solid #ef4444;">
+              <div class="verdict-header">
+                <span>🔴</span>
+                <span>Incumplido / Falso / Bulo</span>
+              </div>
+              <div class="verdict-desc">El plazo venció sin ejecución, afirmación desmentida o bulo contrastado.</div>
+            </div>
+            <div class="verdict-chip" style="border-left: 3px solid #94a3b8;">
+              <div class="verdict-header">
+                <span>⚪</span>
+                <span>Sin datos verificables</span>
+              </div>
+              <div class="verdict-desc">Falta de registros independientes o información clasificada para determinarlo.</div>
+            </div>
+          </div>
         </div>
 
         <!-- Year-Round Civic Action & Radical Neutrality Section -->
@@ -899,6 +1010,32 @@ La precisión y trazabilidad tienen prioridad sobre la velocidad, la cantidad de
             </button>
             <div class="accordion-content">
               <p>Es 100% gratuito y sin registros. Solo debes copiar el prompt de esta web y pegarlo en la ventana de chat de tu asistente habitual, o guardarlo como instrucción permanente siguiendo los <a href="./tutorial/" style="color: var(--accent-primary); text-decoration: underline;">tutoriales de configuración paso a paso</a>. La conversación transcurre en tu propio chat y no recopilamos ningún dato.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span>🏛️</span>
+                <strong>¿Cómo puedo usar la IA para consultar las votaciones del Congreso y el BOE?</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>Copia el prompt de esta web y pégalo en tu asistente habitual, sea cual sea. Después pregúntale en lenguaje natural qué votó cada diputado o grupo en una ley concreta: el protocolo le obliga a consultar los registros parlamentarios, los diarios de sesiones y el BOE antes de responder, y a devolverte el sentido del voto con enlaces de verificación. En el <a href="./fuentes/" style="color: var(--accent-primary); text-decoration: underline;">directorio de fuentes</a> tienes los enlaces directos a esos registros oficiales.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" type="button">
+              <span style="display: flex; align-items: center; gap: 0.6rem;">
+                <span>📋</span>
+                <strong>¿Cómo contrastar las propuestas del 29N con el historial real de cada partido?</strong>
+              </span>
+              <span>▼</span>
+            </button>
+            <div class="accordion-content">
+              <p>Al activar el fiscalizador, la IA extrae lo que promete cada candidatura y lo cruza con las votaciones históricas del Congreso y con las leyes publicadas en el BOE, señalando si la propuesta coincide o contradice lo que ese grupo ya votó. Así se distingue una promesa nueva de una promesa que ya se votó en contra. Tienes el procedimiento completo en los <a href="./tutorial/" style="color: var(--accent-primary); text-decoration: underline;">tutoriales</a>.</p>
             </div>
           </div>
 

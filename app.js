@@ -105,6 +105,8 @@ function renderPromptViewer() {
 function renderSteps() {
   const container = document.getElementById('steps-container');
   if (!container) return;
+  // Mejora progresiva: el HTML estático ya trae los 8 pasos pre-renderizados.
+  if (container.querySelector('.step-card')) return;
 
   container.innerHTML = promptSteps.map(item => `
     <article class="step-card">
@@ -118,6 +120,8 @@ function renderSteps() {
 function renderVerdicts() {
   const container = document.getElementById('verdicts-container');
   if (!container) return;
+  // Mejora progresiva: el HTML estático ya trae la leyenda pre-renderizada.
+  if (container.querySelector('.verdict-chip')) return;
 
   container.innerHTML = promptVerdicts.map(item => `
     <div class="verdict-chip" style="border-left: 3px solid ${item.color};">
@@ -177,7 +181,7 @@ function initSourcesDirectory() {
           </div>
         </div>
         <a href="${source.url}" target="_blank" rel="noopener noreferrer" class="source-link-btn">
-          Visitar portal oficial ↗
+          Abrir fuente ↗
         </a>
       </article>
     `).join('');
@@ -199,7 +203,10 @@ function initSourcesDirectory() {
     });
   });
 
-  renderFilteredSources();
+  // Mejora progresiva: el HTML estático ya trae las 22 tarjetas pre-renderizadas
+  // para Googlebot y scrapers sin JS. El filtrado se activa al interactuar.
+  const isPreRendered = grid && grid.querySelector('.source-card');
+  if (!isPreRendered) renderFilteredSources();
 }
 
 function initTabs() {
